@@ -59,3 +59,13 @@ function checkResult() {
         alert('Cards are consecutive or the same. Click "Deal" to get new cards.');
     }
 }
+
+function resetGame() {
+    credits = 50;
+    bet = 5;
+    document.getElementById('credits').textContent = credits;
+    document.getElementById('bet').textContent = bet;
+    document.getElementById('card1').textContent = '';
+    document.getElementById('card2').textContent = '';
+    document.getElementById('card3').textContent = '';
+  }
