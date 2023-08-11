@@ -45,3 +45,11 @@ function checkResult() {
     }
 
 }
+
+if (credits >= 1000) {
+    alert('Congratulations! You win!');
+    resetGame();
+  } else if (credits <= 0) {
+    alert('Game over! You lose.');
+    resetGame();
+  }
