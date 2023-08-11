@@ -44,13 +44,18 @@ function checkResult() {
         credits -= bet;
     }
 
-}
-document.getElementById('credits').textContent = credits;
 
-if (credits >= 1000) {
-    alert('Congratulations! You win!');
-    resetGame();
-  } else if (credits <= 0) {
-    alert('Game over! You lose.');
-    resetGame();
-  }
+    document.getElementById('credits').textContent = credits;
+
+    if (credits >= 1000) {
+        alert('Congratulations! You win!');
+        resetGame();
+    } 
+    else if (credits <= 0) {
+        alert('Game over! You lose.');
+        resetGame();
+    }
+    else if (Math.abs(value3 - value1) <= 1 || Math.abs(value3 - value2) <= 1) {
+        alert('Cards are consecutive or the same. Click "Deal" to get new cards.');
+    }
+}
