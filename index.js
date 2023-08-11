@@ -35,4 +35,6 @@ function changeBet(amount) {
  
 function checkResult () {
     const value1 = values.indexOf(card1.substring(0, card1.length - 1));
+    const value2 = values.indexOf(card2.substring(0, card2.length - 1));
+    const value3 = values.indexOf(card3.substring(0, card3.length - 1));
 }
