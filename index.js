@@ -45,6 +45,7 @@ function checkResult() {
     }
 
 }
+document.getElementById('credits').textContent = credits;
 
 if (credits >= 1000) {
     alert('Congratulations! You win!');
