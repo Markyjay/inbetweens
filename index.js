@@ -32,4 +32,7 @@ function changeBet(amount) {
       document.getElementById('bet').textContent = bet;
     }
   }
-  
+ 
+function checkResult () {
+    const value1 = values.indexOf(card1.substring(0, card1.length - 1));
+}
