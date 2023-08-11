@@ -25,3 +25,11 @@ function hit() {
     document.getElementById('card3').textContent = card3;
     checkResult();
 }
+
+function changeBet(amount) {
+    if (bet + amount >= 5 && bet + amount <= credits) {
+      bet += amount;
+      document.getElementById('bet').textContent = bet;
+    }
+  }
+  
