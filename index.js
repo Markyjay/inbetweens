@@ -12,12 +12,28 @@ function getRandomCard() {
 }
 
 function deal() {
+    if (credits >= 5) {
+    bet = 5; // Set the bet to an automatic 5 credits
+    credits -= bet; // Deduct the bet amount from credits
+    document.getElementById('bet').textContent = bet;
+    document.getElementById('credits').textContent = credits;
+
+
     card1 = getRandomCard();
     card2 = getRandomCard();
-    card3 = 'blank';
+    card3 = '';
     document.getElementById('card1').textContent = card1;
     document.getElementById('card2').textContent = card2;
     document.getElementById('card3').textContent = card3;
+
+    updateBetButtons();
+    updateHitDealButtons();
+
+    } else {
+    alert("Not enough credits to deal. Please change your bet or add more credits.");
+    }
+
+
 }
 
 function hit() {
