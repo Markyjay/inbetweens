@@ -88,8 +88,8 @@ function deal() {
         alert("Not enough credits to deal. Please change your bet or add more credits.");
     }
 
-    document.getElementById('card1').style.backgroundImage = 'url(images/${cardImages[card1]})';
-    document.getElementById('card2').style.backgroundImage = 'url(images/${cardImages[card2]})';
+    document.getElementById('card1').style.backgroundImage = `url(images/${cardImages[card1]})`;
+    document.getElementById('card2').style.backgroundImage = `url(images/${cardImages[card2]})`;
     document.getElementById('card3').style.backgroundImage = 'none'; // Clear card3 image
 }
 
@@ -98,14 +98,14 @@ function hit() {
     document.getElementById('card3').textContent = card3;
 
     if (value3 === value1 || value3 === value2) {
-        alert('Hit card is the same as one of the previous cards. You lose your bet.');
+        alert('Hit card is the same as one of the dealers cards. You lose your bet.');
         credits -= bet;
         document.getElementById('credits').textContent = credits;
         resetCards();
         updateBetButtons();
         updateHitDealButtons();
     } else {
-        document.getElementById('card3').style.backgroundImage = 'url(images/${cardImages[card3]})';
+        document.getElementById('card3').style.backgroundImage = `url(images/${cardImages[card3]})`;
         checkResult();
     }
 }
