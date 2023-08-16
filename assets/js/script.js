@@ -1,3 +1,15 @@
+//* Define the card class for the dealer
+class cards {
+    // constructor for the identifiers
+    constructor(id) {
+        // Identifier for the cards
+        this.cards = cards
+        // This is the the default image that will be displayed when a card has not been played
+        this.cardbacking = 'back.JPG'
+}}
+
+
+
 const suits = ['♠', '♥', '♦', '♣'];
 const values = ['2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a'];
 
@@ -68,15 +80,22 @@ function getRandomCard() {
 
 function deal() {
     if (credits >= 5) {
+        if (card1 === card2 || Math.abs(value2 - value1) === 1) {
+            // Automatic re-deal for equal or consecutive cards
+            card1 = getRandomCard();
+            card2 = getRandomCard();
+            card3 = 'back.JPG';
+            value1 = values.indexOf(card1.substring(0, card1.length - 1));
+            value2 = values.indexOf(card2.substring(0, card2.length - 1));
+            document.getElementById('card1').style.backgroundImage = `url(images/${cardImages[card1]})`;
+            document.getElementById('card2').style.backgroundImage = `url(images/${cardImages[card2]})`;
+            document.getElementById('card3').style.backgroundImage = 'none'; // Clear card3 image
+
+        }
         bet = 5; // Set the bet to an automatic 5 credits
         credits -= bet; // Deduct the bet amount from credits
         document.getElementById('bet').textContent = bet;
         document.getElementById('credits').textContent = credits;
-
-
-        card1 = getRandomCard();
-        card2 = getRandomCard();
-        card3 = '';
         document.getElementById('card1').textContent = card1;
         document.getElementById('card2').textContent = card2;
         document.getElementById('card3').textContent = card3;
@@ -88,9 +107,6 @@ function deal() {
         alert("Not enough credits to deal. Please change your bet or add more credits.");
     }
 
-    document.getElementById('card1').style.backgroundImage = `url(images/${cardImages[card1]})`;
-    document.getElementById('card2').style.backgroundImage = `url(images/${cardImages[card2]})`;
-    document.getElementById('card3').style.backgroundImage = 'none'; // Clear card3 image
 }
 
 function hit() {
