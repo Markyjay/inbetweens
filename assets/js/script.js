@@ -81,16 +81,13 @@ function deal() {
             value2 = values.indexOf(card2.substring(0, card2.length - 1));
             document.getElementById('card1').style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
             document.getElementById('card2').style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
-            document.getElementById('card3').style.backgroundImage = ''; // Clear card3 image
 
         }
         bet = 5; // Set the bet to an automatic 5 credits
         credits -= bet; // Deduct the bet amount from credits
         document.getElementById('bet').textContent = bet;
         document.getElementById('credits').textContent = credits;
-        document.getElementById('card1').textContent = card1;
-        document.getElementById('card2').textContent = card2;
-        document.getElementById('card3').textContent = card3;
+ 
 
         // updateBetButtons();
         // updateHitDealButtons();
@@ -107,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function hit() {
     card3 = getRandomCard();
-    document.getElementById('card3').textContent = card3;
+    value3 = values.indexOf(card3.substring(0, card3.length - 1));
 
     if (value3 === value1 || value3 === value2) {
         alert('Hit card is the same as one of the dealers cards. You lose your bet.');
@@ -117,7 +114,7 @@ function hit() {
         // updateBetButtons();
         // updateHitDealButtons();
     } else {
-        document.getElementById('card3').style.backgroundImage = `url(images/${cardImages[card3]})`;
+        document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
         checkResult();
     }
 }
