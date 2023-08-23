@@ -100,7 +100,10 @@ function deal() {
     }
 
 }
-
+document.addEventListener("DOMContentLoaded", function() {
+    const dealButton = document.getElementById("deal");
+    dealButton.addEventListener("click", deal);
+});
 
 function hit() {
     card3 = getRandomCard();
@@ -119,12 +122,28 @@ function hit() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const hitButton = document.getElementById("hit");
+    hitButton.addEventListener("click", hit);
+});
+
 function changeBet(amount) {
     if (bet + amount >= 5 && bet + amount <= credits) {
         bet += amount;
         document.getElementById('bet').textContent = bet;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const betUpButton = document.getElementById("betUp");
+    betUpButton.addEventListener("click", betUp);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const betDownButton = document.getElementById("betDown");
+    betDownButton.addEventListener("click", betDown);
+});
+
 
 function checkResult() {
     const value1 = values.indexOf(card1.substring(0, card1.length - 1));
@@ -162,3 +181,8 @@ function resetGame() {
     document.getElementById('card2').textContent = '';
     document.getElementById('card3').textContent = '';
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const resetButton = document.getElementById("reset");
+    resetButton.addEventListener("click", reset);
+});
