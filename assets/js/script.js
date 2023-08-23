@@ -79,28 +79,31 @@ function deal() {
             card3 = '';
             value1 = values.indexOf(card1.substring(0, card1.length - 1));
             value2 = values.indexOf(card2.substring(0, card2.length - 1));
-            document.getElementById('card1').style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
-            document.getElementById('card2').style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
 
         }
         bet = 5; // Set the bet to an automatic 5 credits
         credits -= bet; // Deduct the bet amount from credits
         document.getElementById('bet').textContent = bet;
         document.getElementById('credits').textContent = credits;
- 
+        document.getElementById('card1').style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
+        document.getElementById('card2').style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
 
-        // updateBetButtons();
-        // updateHitDealButtons();
-
-    } else {
+        } 
+        else {
         alert("Not enough credits to deal. Please change your bet or add more credits.");
     }
+    
 
 }
 document.addEventListener("DOMContentLoaded", function() {
     const dealButton = document.getElementById("deal");
     dealButton.addEventListener("click", deal);
 });
+
+function pass() {
+if 
+
+}
 
 function hit() {
     card3 = getRandomCard();
