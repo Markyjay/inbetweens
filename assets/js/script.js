@@ -70,7 +70,6 @@ function getRandomCard() {
 }
 
 function deal() {
-
     if (credits >= 5) {
         if (card1 === card2 || Math.abs(value2 - value1) === 1) {
             // Automatic re-deal for equal or consecutive cards
@@ -79,7 +78,6 @@ function deal() {
             card3 = '';
             value1 = values.indexOf(card1.substring(0, card1.length - 1));
             value2 = values.indexOf(card2.substring(0, card2.length - 1));
-
         }
         bet = 5; // Set the bet to an automatic 5 credits
         credits -= bet; // Deduct the bet amount from credits
@@ -92,8 +90,7 @@ function deal() {
         else {
         alert("Not enough credits to deal. Please change your bet or add more credits.");
     }
-    
-
+   
 }
 document.addEventListener("DOMContentLoaded", function() {
     const dealButton = document.getElementById("deal");
