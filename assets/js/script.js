@@ -101,9 +101,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function pass() {
-if 
+    if (card1 === card2 || Math.abs(value2 - value1) === 1) {
+        // Automatic re-deal for equal or consecutive cards
+        card1 = getRandomCard();
+        card2 = getRandomCard();
+        card3 = '';
+        value1 = values.indexOf(card1.substring(0, card1.length - 1));
+        value2 = values.indexOf(card2.substring(0, card2.length - 1));
+    }
 
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const passButton = document.getElementById("pass");
+    passButton.addEventListener("click", pass);
+});
 
 function hit() {
     card3 = getRandomCard();
@@ -113,7 +124,7 @@ function hit() {
         alert('Hit card is the same as one of the dealers cards. You lose your bet.');
         credits -= bet;
         document.getElementById('credits').textContent = credits;
-        resetCards();
+        deal();
         // updateBetButtons();
         // updateHitDealButtons();
     } else {
