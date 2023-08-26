@@ -7,20 +7,22 @@ body {
 }
 
 #container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 20px;
-  background-color: green;
+  background-image: linear-gradient(to top, rgba(81, 255, 0, 0.911) , rgba(105, 214, 102, 0.658) );
   border-radius: 10px;
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 10vw;
 }
 
+
 h1 {
   margin: 0 0 20px 0;
   font-size: 500%;
   color: yellow;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
 
