@@ -7,15 +7,14 @@ body {
 }
 
 /* Nav Bar */
-.nav div {
-  letter-spacing: 2px;
-
+#nav {
+border-style: groove;
 }
 
-.nav a {
+#nav a {
   text-align: center;
-  color: white;
-  padding: 14px 16px;
+  color: yellow;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 
@@ -25,29 +24,31 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #8eaf9d;
-  border-radius: 100px;
+  background-color: #02833c;
 }
 
 li {
   float: left;
-}
-
+  }
 
 li a {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
-  height: 6vw;
+  height: 2vw;
+  
 }
 
 
 li a:hover {
-  background-color: #717171;
+  background-color: #02993c;
   border-radius: 100px;
+  border-style: groove;
 }
+
+/* Main */
+
 
 
 /* Game Container */
