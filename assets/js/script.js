@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function() {
     dealButton.addEventListener("click", deal);
 });
 
+// Re-deal for equal or consecutive cards
+
 function pass() {
     if (card1 === card2 || Math.abs(value2 - value1) === 1) {
         console.log ("No possible inbetween value, pass for new cards" )
-        // Automatic re-deal for equal or consecutive cards
- 
-    }
+     }
     deal()
 
 }
