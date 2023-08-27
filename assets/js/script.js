@@ -1,6 +1,6 @@
 
 const suits = ['♠', '♥', '♦', '♣'];
-const values = ['2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a'];
+const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'];
 
 const cardImages = {
     '2♣': '2c.JPG',
@@ -11,11 +11,11 @@ const cardImages = {
     '7♣': '7c.JPG',
     '8♣': '8c.JPG',
     '9♣': '9c.JPG',
-    't♣': 'tc.JPG',
-    'j♣': 'jc.JPG',
-    'q♣': 'qc.JPG',
-    'k♣': 'kc.JPG',
-    'a♣': 'ac.JPG',
+    '10♣': 'tc.JPG',
+    '11♣': 'jc.JPG',
+    '12♣': 'qc.JPG',
+    '13♣': 'kc.JPG',
+    '14♣': 'ac.JPG',
     '2♦': '2d.JPG',
     '3♦': '3d.JPG',
     '4♦': '4d.JPG',
@@ -24,11 +24,11 @@ const cardImages = {
     '7♦': '7d.JPG',
     '8♦': '8d.JPG',
     '9♦': '9d.JPG',
-    't♦': 'td.JPG',
-    'j♦': 'jd.JPG',
-    'q♦': 'qd.JPG',
-    'k♦': 'kd.JPG',
-    'a♦': 'ad.JPG',
+    '10♦': 'td.JPG',
+    '11♦': 'jd.JPG',
+    '12♦': 'qd.JPG',
+    '13♦': 'kd.JPG',
+    '14♦': 'ad.JPG',
     '2♥': '2h.JPG',
     '3♥': '3h.JPG',
     '4♥': '4h.JPG',
@@ -37,11 +37,11 @@ const cardImages = {
     '7♥': '7h.JPG',
     '8♥': '8h.JPG',
     '9♥': '9h.JPG',
-    't♥': 'th.JPG',
-    'j♥': 'jh.JPG',
-    'q♥': 'qh.JPG',
-    'k♥': 'kh.JPG',
-    'a♥': 'ah.JPG',
+    '10♥': 'th.JPG',
+    '11♥': 'jh.JPG',
+    '12♥': 'qh.JPG',
+    '13♥': 'kh.JPG',
+    '14♥': 'ah.JPG',
     '2♠': '2s.JPG',
     '3♠': '3s.JPG',
     '4♠': '4s.JPG',
@@ -50,11 +50,11 @@ const cardImages = {
     '7♠': '7s.JPG',
     '8♠': '8s.JPG',
     '9♠': '9s.JPG',
-    't♠': 'ts.JPG',
-    'j♠': 'js.JPG',
-    'q♠': 'qs.JPG',
-    'k♠': 'ks.JPG',
-    'a♠': 'as.JPG',
+    '10♠': 'ts.JPG',
+    '11♠': 'js.JPG',
+    '12♠': 'qs.JPG',
+    '13♠': 'ks.JPG',
+    '14♠': 'as.JPG',
     'back': 'back.JPG'
 }
 
@@ -71,14 +71,13 @@ function getRandomCard() {
 
 function deal() {
     if (credits >= 5) {
-        if (card1 === card2 || Math.abs(value2 - value1) === 1) {
-            // Automatic re-deal for equal or consecutive cards
-            card1 = getRandomCard();
-            card2 = getRandomCard();
-            card3 = '';
-            value1 = values.indexOf(card1.substring(0, card1.length - 1));
-            value2 = values.indexOf(card2.substring(0, card2.length - 1));
-        }
+
+        card1 = getRandomCard();
+        card2 = getRandomCard();
+        card3 = '';
+        value1 = values.indexOf(card1.substring(0, card1.length - 1));
+        value2 = values.indexOf(card2.substring(0, card2.length - 1));
+        
         bet = 5; // Set the bet to an automatic 5 credits
         credits -= bet; // Deduct the bet amount from credits
         document.getElementById('bet').textContent = bet;
@@ -99,13 +98,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function pass() {
     if (card1 === card2 || Math.abs(value2 - value1) === 1) {
+        console.log ("No possible inbetween value, pass for new cards" )
         // Automatic re-deal for equal or consecutive cards
-        card1 = getRandomCard();
-        card2 = getRandomCard();
-        card3 = '';
-        value1 = values.indexOf(card1.substring(0, card1.length - 1));
-        value2 = values.indexOf(card2.substring(0, card2.length - 1));
+ 
     }
+    deal()
 
 }
 document.addEventListener("DOMContentLoaded", function() {
@@ -164,7 +161,6 @@ function checkResult() {
         credits -= bet;
     }
 
-
     document.getElementById('credits').textContent = credits;
 
     if (credits >= 1000) {
@@ -175,9 +171,7 @@ function checkResult() {
         alert('Game over! You lose.');
         resetGame();
     }
-    else if (Math.abs(value3 - value1) <= 1 || Math.abs(value3 - value2) <= 1) {
-        alert('Cards are consecutive or the same. Click "Deal" to get new cards.');
-    }
+
 }
 
 function resetGame() {
