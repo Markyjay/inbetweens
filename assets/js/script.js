@@ -89,8 +89,6 @@ function deal() {
         document.getElementById('card3').textContent = '';
         document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages['back']})`;
 
-
-
         // Allow cards to be dealt again due to impossible outcome
         dealAgain = true
 
