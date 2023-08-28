@@ -58,7 +58,7 @@ const cardImages = {
     'back': 'back.JPG'
 }
 
-let credits = 50;
+let credits = 100;
 let bet = 5;
 let card1, card2, card3;
 
@@ -139,10 +139,18 @@ function changeBet(amount) {
     }
 }
 
+function betUp() {
+    changeBet(5);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const betUpButton = document.getElementById("betUp");
     betUpButton.addEventListener("click", betUp);
 });
+
+function betDown() {
+    changeBet(-5);
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     const betDownButton = document.getElementById("betDown");
@@ -174,7 +182,8 @@ function checkResult() {
 
 }
 
-function resetGame() {
+
+function reset() {
     credits = 50;
     bet = 5;
     document.getElementById('credits').textContent = credits;
@@ -188,3 +197,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const resetButton = document.getElementById("reset");
     resetButton.addEventListener("click", reset);
 });
+
