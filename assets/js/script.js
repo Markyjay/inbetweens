@@ -1,6 +1,6 @@
 
 const suits = ['♠', '♥', '♦', '♣'];
-const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'];
+const values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'];
 
 const cardImages = {
     '2♣': '2c.JPG',
@@ -15,7 +15,7 @@ const cardImages = {
     '11♣': 'jc.JPG',
     '12♣': 'qc.JPG',
     '13♣': 'kc.JPG',
-    '14♣': 'ac.JPG',
+    '1♣': 'ac.JPG',
     '2♦': '2d.JPG',
     '3♦': '3d.JPG',
     '4♦': '4d.JPG',
@@ -54,14 +54,14 @@ const cardImages = {
     '11♠': 'js.JPG',
     '12♠': 'qs.JPG',
     '13♠': 'ks.JPG',
-    '14♠': 'as.JPG',
+    '1♠': 'as.JPG',
     'back': 'back.JPG'
 }
 
 let credits = 100;
 let bet = 5;
 let card1, card2, card3;
-
+let dealAgain = true; // Add this variable to track re-deal eligibility
 
 function getRandomCard() {
     const randomSuit = suits[Math.floor(Math.random() * suits.length)];
@@ -70,7 +70,7 @@ function getRandomCard() {
 }
 
 function deal() {
-    if (credits >= 5) {
+    if (credits >= 5 && dealAgain) {
 
         card1 = getRandomCard();
         card2 = getRandomCard();
@@ -84,6 +84,15 @@ function deal() {
         document.getElementById('credits').textContent = credits;
         document.getElementById('card1').style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
         document.getElementById('card2').style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
+
+        // Refresh hit card
+        document.getElementById('card3').textContent = '';
+        document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages['back']})`;
+
+
+
+        // Allow cards to be dealt again due to impossible outcome
+        dealAgain = true
 
         } 
         else {
@@ -101,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function pass() {
     if (card1 === card2 || Math.abs(value2 - value1) === 1) {
         console.log ("No possible inbetween value, pass for new cards" )
+        dealAgain = false // Disables re-deal in this case
      }
     deal()
 
@@ -115,6 +125,8 @@ function hit() {
     value3 = values.indexOf(card3.substring(0, card3.length - 1));
 
     if (value3 === value1 || value3 === value2) {
+        getRandomCard();
+        document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
         alert('Hit card is the same as one of the dealers cards. You lose your bet.');
         credits -= bet;
         document.getElementById('credits').textContent = credits;
@@ -163,6 +175,8 @@ function checkResult() {
     const value2 = values.indexOf(card2.substring(0, card2.length - 1));
     const value3 = values.indexOf(card3.substring(0, card3.length - 1));
 
+    document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
+
     if ((value3 > value1 && value3 < value2) || (value3 < value1 && value3 > value2)) {
         credits += bet;
     } else {
@@ -184,14 +198,16 @@ function checkResult() {
 
 
 function reset() {
-    credits = 50;
+    credits = 100;
     bet = 5;
     document.getElementById('credits').textContent = credits;
     document.getElementById('bet').textContent = bet;
-    document.getElementById('card1').textContent = '';
-    document.getElementById('card2').textContent = '';
-    document.getElementById('card3').textContent = '';
+    document.getElementById('card1').style.backgroundImage = `url(assets/images/${cardImages['back']})`;
+    document.getElementById('card2').style.backgroundImage = `url(assets/images/${cardImages['back']})`;
+    document.getElementById('card3').style.backgroundImage = `url(assets/images/${cardImages['back']})`;
 }
+
+reset()
 
 document.addEventListener("DOMContentLoaded", function() {
     const resetButton = document.getElementById("reset");
