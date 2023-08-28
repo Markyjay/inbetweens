@@ -7,7 +7,7 @@ Welcome to Inbetweens the Card Game! Test your luck by placing bets on whether t
 Inbetween is a card game I played as a teenager, it’s a betting game usually played for money. The game will be adapted for the purposes of this project. As a teacher I used to play games like this with my students using tokens to get them to understand the concept of probability and chance and my students found it very enjoyable and learned quickly to ascertain high and low probabilities and the highs and lows of risk-taking. 
 
 
-A live version of the site can be found here: https://markyjay.github.io/inbetweens.git/
+A live version of the site can be found here: https://markyjay.github.io/inbetweens/
 
 # Table of contents
 
