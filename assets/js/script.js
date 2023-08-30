@@ -99,7 +99,7 @@ function deal() {
     card1 = getRandomCard();
     card2 = getRandomCard();
     console.log(card1, "<===card 1 aftyer");
-    card3 = "";
+    card3 = getRandomCard();
     // value1 = values.indexOf(card1.substring(0, card1.length - 1));
     // value2 = values.indexOf(card2.substring(0, card2.length - 1));
 
@@ -107,24 +107,18 @@ function deal() {
     credits -= bet; // Deduct the bet amount from credits
     document.getElementById("bet").textContent = bet;
     document.getElementById("credits").textContent = credits;
-    document.getElementById(
-      "card1"
-    ).style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
-    document.getElementById(
-      "card2"
-    ).style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
+    document.getElementById("card1").style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
+    document.getElementById("card2").style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
 
     // Refresh hit card
     document.getElementById("card3").textContent = "";
-    document.getElementById(
-      "card3"
-    ).style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
+    document.getElementById("card3").style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
 
     // Allow cards to be dealt again due to impossible outcome
     dealAgain = true;
   } else {
     alert(
-      "Not enough credits to deal. Please change your bet or add more credits."
+      "Not enough credits to deal."
     );
   }
 }
