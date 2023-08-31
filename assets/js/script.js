@@ -78,6 +78,7 @@ let card1 = getRandomCard();
 let card2 = getRandomCard();
 let card3 = getRandomCard();
 let dealAgain = true; // Add this variable to track re-deal eligibility
+let allowPass = true;
 
 const value1 = values.indexOf(card1.substring(0, card1.length - 1));
 const value2 = values.indexOf(card2.substring(0, card2.length - 1));
@@ -104,13 +105,8 @@ function deal() {
   if (credits >= 5 && dealAgain) {
     card1 = getRandomCard();
     card2 = getRandomCard();
-    console.log(card1, "<===card 1 aftyer");
-    console.log(card2, "Card 2");
-    console.log(card3, "Card 3");
     card3 = getRandomCard();
-    // value1 = values.indexOf(card1.substring(0, card1.length - 1));
-    // value2 = values.indexOf(card2.substring(0, card2.length - 1));
-
+    
     bet = 5; // Set the bet to an automatic 5 credits
     credits -= bet; // Deduct the bet amount from credits
     document.getElementById("bet").textContent = bet;
@@ -144,10 +140,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function pass() {
   if (card1 === card2 || Math.abs(value2 - value1) === 1) {
     console.log("No possible inbetween value, pass for new cards");
-    dealAgain = false; // Disables re-deal in this case
+    // Do nothing to prevent deducting credits
+  } else {
+    bet = 5; // Set the bet to an automatic 5 credits
+    credits -= bet; // Deduct the bet amount from credits
   }
   deal();
 }
+
 document.addEventListener("DOMContentLoaded", function () {
   const passButton = document.getElementById("pass");
   passButton.addEventListener("click", pass);
@@ -155,23 +155,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function hit() {
   card3 = getRandomCard();
-  if (value3 === value1 || value3 === value2) {
-    getRandomCard();
-    document.getElementById(
-      "card3"
-    ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
-    alert(
-      "Hit card is the same as one of the dealers cards. You lose your bet."
-    );
-    credits -= bet;
-    document.getElementById("credits").textContent = credits;
-    deal();
-    } else {
-    document.getElementById(
-      "card3"
-    ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
-    checkResult();
-  }
+  document.getElementById(
+    "card3"
+  ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
+  
+  checkResult();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -208,7 +196,6 @@ function checkResult() {
   document.getElementById(
     "card3"
   ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
-
   if (
     (value3 > value1 && value3 < value2) ||
     (value3 < value1 && value3 > value2)
