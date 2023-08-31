@@ -74,6 +74,7 @@ const cardImages = {
 
 let credits = 100;
 let bet = 5;
+let noCharge = 0;
 let card1 = getRandomCard();
 let card2 = getRandomCard();
 let card3 = getRandomCard();
@@ -138,14 +139,27 @@ document.addEventListener("DOMContentLoaded", function () {
 // Re-deal for equal or consecutive cards
 
 function pass() {
+  card1 = getRandomCard();
+  card2 = getRandomCard();
+  
+  document.getElementById("bet").textContent = bet;
+  document.getElementById("credits").textContent = credits;
+  document.getElementById(
+    "card1"
+  ).style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
+  document.getElementById(
+    "card2"
+  ).style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
+
   if (card1 === card2 || Math.abs(value2 - value1) === 1) {
     console.log("No possible inbetween value, pass for new cards");
     // Do nothing to prevent deducting credits
+    noCharge = 0;
+    credits -= noCharge;
   } else {
     bet = 5; // Set the bet to an automatic 5 credits
     credits -= bet; // Deduct the bet amount from credits
   }
-  deal();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -205,6 +219,7 @@ function checkResult() {
     credits -= bet;
   }
 
+  // Update the displayed credits with the new value
   document.getElementById("credits").textContent = credits;
 
   if (credits >= 1000) {
