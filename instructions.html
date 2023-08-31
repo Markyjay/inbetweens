@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A website for collection of casino type games">
     <meta name="keywords" content="Cards, games, fun, play, winning">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
     <title>Inbetweens</title>
 </head>
 
@@ -18,10 +18,10 @@
             <nav>
                 <ul id="nav">
                     <li>
-                        <a href="index.html" class="active">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="instructions.html">Instructions</a>
+                        <a href="instructions.html" class="active">Instructions</a>
                     </li>
                     <li>
                         <a href="inbetweens.html">Inbetweens</a>
@@ -29,27 +29,21 @@
                 </ul>
             </nav>
     </header>
-    <section>
-
-        <a href="inbetweens.html" target="_blank" 
-        aria-label="Takes user to inbetweens game"><img src="assets/images/back.jpg" alt="game_ing" id="game_img"></a>
-
-    </section>
-    <div class="container">
+     <div class="container">
         <h1>Probability Calculator</h1>
-        <div id="probability-testing">
-            <div class="dealer-card" id="card1"><img src="#" alt=""></div>
-            <div class="dealer-card" id="card2"><img src="#" alt=""></div>
+        <div class="dealer-area" id="probability-testing">
+            <div class="dealer-card" id="card1"></div>
+            <div class="dealer-card" id="card2"></div>
         </div>
         <div class="play-area">
-            <div class="player-card" id="card3"><img src="#" alt=""></div>
+            <div class="player-card" id="card3"></div>
         </div>
         <div>
             <button type="submit">Calculate Probability</button>
         </div>
     </div>
     
-    <script src="assets/js/instructions.js"></script>
+    <script src="/assets/js/instructions.js"></script>
 </body>
 
 </html>
