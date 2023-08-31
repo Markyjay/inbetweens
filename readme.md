@@ -69,13 +69,15 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 ## UX
 
 ### User Demographic
+The game would be aimed toward card player and maybe teachers who would like to use the game to teach probability to their students.
 
 
 ### User Goals
-
+The goal is to create awebsite that uses a basic card game to teach chance and probability to students and for any user to have fun trying to reach the winning objective of 1000 credits.
 
 
 ### Design
+
 
 
 

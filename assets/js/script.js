@@ -69,7 +69,7 @@ const cardImages = {
   "12♠": "qs.jpg",
   "13♠": "ks.jpg",
   "1♠": "as.jpg",
-  back: "back.jpg",
+  "back": "back.jpg",
 };
 
 let credits = 100;
@@ -80,9 +80,6 @@ let card3 = getRandomCard();
 let dealAgain = true; // Add this variable to track re-deal eligibility
 
 const value1 = values.indexOf(card1.substring(0, card1.length - 1));
-
-console.log(card1, "<===card 1");
-
 const value2 = values.indexOf(card2.substring(0, card2.length - 1));
 const value3 = values.indexOf(card3.substring(0, card3.length - 1));
 
@@ -103,7 +100,6 @@ function getRandomCard() {
 }
 
 function deal() {
-  // console.log(value1, "<====== value1");
 
   if (credits >= 5 && dealAgain) {
     card1 = getRandomCard();
@@ -159,8 +155,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function hit() {
   card3 = getRandomCard();
-  // value3 = values.indexOf(card3.substring(0, card3.length - 1));
-
   if (value3 === value1 || value3 === value2) {
     getRandomCard();
     document.getElementById(
@@ -172,9 +166,7 @@ function hit() {
     credits -= bet;
     document.getElementById("credits").textContent = credits;
     deal();
-    // updateBetButtons();
-    // updateHitDealButtons();
-  } else {
+    } else {
     document.getElementById(
       "card3"
     ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
