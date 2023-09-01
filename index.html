@@ -11,10 +11,6 @@
 </head>
 
 <body>
-    <h1>Inbet  <a href="inbetweens.html" target="_blank" 
-        aria-label="Takes user to inbetweens game"><img src="/assets/images/back.jpg" alt="game_img" id="game_img"></a>
-weens</h1>
-    
     <header>
         <a href="index.html">
             <nav>
@@ -31,6 +27,12 @@ weens</h1>
                 </ul>
             </nav>
     </header>
+    <h1><a href="inbetweens.html" target="_blank" 
+        aria-label="Takes user to inbetweens game"><img src="/assets/images/ad.jpg" alt="Ace_diamonds" id="game_img"></a>
+        Inbet  <a href="inbetweens.html" target="_blank" 
+        aria-label="Takes user to inbetweens game"><img src="/assets/images/back.jpg" alt="game_img" id="game_img"></a>
+        weens<a href="inbetweens.html" target="_blank" 
+        aria-label="Takes user to inbetweens game"><img src="/assets/images/as.jpg" alt="Ace_spades" id="game_img"></a></h1>
     <div>
         <p>Welcome to the game of inbetweens an easy to understand game 
             of probability. This game can be won with
@@ -39,31 +41,58 @@ weens</h1>
             only teach you how to play the game but 
             also teach you how to win by understanding the probabilities involved.</p>
     </div>
-    <div>
-        <h2>The Game</h2>
-        <p>
-        
-The dealer lays two random cards in face up side by side and in front of the player, so both dealer and player can see the value of each card, a third card is then laid face down in-between these cards and play begins.
-</p>
-<h2>
-    Rank of Cards
-</h2>
-<p>
+    <div class="main-container">
+        <div id="rank-of-cards">
+            <h2>Rank of Cards</h2>
+            <p>Red Ace(high), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2 Black Ace(low)</p>
+           </div>
+           <div id="card-images">
+            <img src="/assets/images/ah.jpg" alt="Red_ace">
+            <img src="/assets/images/kc.jpg" alt="King">
+            <img src="/assets/images/qd.jpg" alt="Queen">
+            <img src="/assets/images/js.jpg" alt="Jack">
+            <img src="/assets/images/th.jpg" alt="Ten">
+            <img src="/assets/images/9c.jpg" alt="Nine">
+            <img src="/assets/images/8d.jpg" alt="Eight">
+            <img src="/assets/images/7s.jpg" alt="Seven">
+            <img src="/assets/images/6h.jpg" alt="Six">
+            <img src="/assets/images/5c.jpg" alt="Five">
+            <img src="/assets/images/4d.jpg" alt="Four">
+            <img src="/assets/images/3s.jpg" alt="Three">
+            <img src="/assets/images/2h.jpg" alt="Two">
+            <img src="/assets/images/ac.jpg" alt="Black_ace">
 
-A(high), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2
-</p>
-<p>Game objective
-To reach 1000 credits.
-</p>
-<p>The Ante
-Once the first two cards are dealt the player chooses whether they wish to be dealt the hit card. For example, if the first two cards are consecutive then there is no card in-between and so the player passes and two more cards are dealt, the same if the first two cards are equal in value. For this reason the player pays 5 credits only when the initial two cards are one or more values apart, this way the player has a chance but also cannot continue to hold their bet until they are dealt an ace and a 2 which will guarantee a win. Therefore, the player plays 5 credits ante to the pot each time that a playable set of cards are dealt.
-</p>
-<p>The Bet
-The bet will then commence once a set of playable cards are dealt and the player puts 5 credits to the pot, then the hit card is placed face down and the player chooses whether to either pass, double, triple, quadruple etc players bet on the premise that the hit card is in-between the dealers cards. The player can only bet with the credits they have.
-
-If the hit card is not between the dealers cards then the player loses the bet. If the hit card is the same value as either of the dealers cards then again the player loses the bet as it is not in-between. If the card is in-between, then the player wins the pot and play continues from the beginning. The player wins the game outright if they reach 1000 credits.
-</p>
-
+           </div>
+        <div id="game-intro">
+        <h2>The Game & Objective</h2>
+        <p>The player is shown two random cards, face up, side by side. The player must decide 
+            to bet or pass on whether the cards value is inbetween the values of the first two cards. 
+            The goal is to reach 1000 credits.</p>
+       </div> 
+    </div>
+    <div class="main-container">
+        <div>
+        <h2>The Ante</h2>
+        <p>Once the first two cards are dealt the player chooses whether they wish to be dealt 
+            the hit card. For example, if the first two cards are consecutive then there is no 
+            card in-between and so the player passes and two more cards are dealt, the same if 
+            the first two cards are equal in value. For this reason the player pays 5 credits 
+            only when the initial two cards are one or more values apart, this way the player 
+            has a chance but also cannot continue to hold their bet until they are dealt an ace 
+            and a 2 which will guarantee a win. Therefore, the player plays 5 credits ante to the 
+            pot each time that a playable set of cards are dealt.</p>
+        </div>
+        <div>
+        <h2>The Bet</h2>
+        <p>The bet will then commence once a set of playable cards are dealt and the player puts 
+            5 credits to the pot, then the hit card is placed face down and the player chooses 
+            whether to either pass, double, triple, quadruple etc players bet on the premise that 
+            the hit card is in-between the dealers cards. The player can only bet with the credits 
+            they have. If the hit card is not between the dealers cards then the player loses the bet. 
+            If the hit card is the same value as either of the dealers cards then again the player loses 
+            the bet as it is not in-between. If the card is in-between, then the player wins the pot 
+            and play continues from the beginning. The player wins the game outright if they reach 1000 credits.</p> 
+        </div>
     </div>
     
     <script src="assets/js/script.js"></script>

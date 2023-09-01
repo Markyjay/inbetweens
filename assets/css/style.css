@@ -54,12 +54,35 @@ li a:hover {
 }
 
 /* Main */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  background-color: green;
+  border-radius: 5px;
+  border-style: inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 3vw;  
+}
 
+#card-images {
 
+}
 
+#card-images img {
+  justify-content: space-around;
+  height: 6vw;
+}
 
-
-
+#rank-of-cards {
+  
+}
+#game-intro {
+  
+}
 
 
 
@@ -121,7 +144,7 @@ li a:hover {
   border-radius: 10px;
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: 10vw;
+  margin-top: 5vw;
 }
 
 h1 {
