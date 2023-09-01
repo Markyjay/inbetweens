@@ -110,6 +110,12 @@ function deal() {
     
     bet = 5; // Set the bet to an automatic 5 credits
     credits -= bet; // Deduct the bet amount from credits
+
+    // Update the value1, value2, and value3 variables
+    value1 = values.indexOf(card1.substring(0, card1.length - 1));
+    value2 = values.indexOf(card2.substring(0, card2.length - 1));
+    value3 = values.indexOf(card3.substring(0, card3.length - 1));
+
     document.getElementById("bet").textContent = bet;
     document.getElementById("credits").textContent = credits;
     document.getElementById(
