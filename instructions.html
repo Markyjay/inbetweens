@@ -30,7 +30,7 @@
             </nav>
     </header>
      <div class="container">
-        <h1>Probability Calculator</h1>
+        <h2>Probability Calculator</h2>
         <div class="dealer-area" id="probability-testing">
             <div class="dealer-card" id="card1"></div>
             <div class="dealer-card" id="card2"></div>
@@ -39,8 +39,16 @@
             <div class="player-card" id="card3"></div>
         </div>
         <div>
-            <button type="submit">Calculate Probability</button>
+            <button type= "submit" id="calculate">Calculate Probability</button>
         </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" id="close">&times;</span>
+                <h2>Probability Result</h2>
+                <p id="result">Probability: <span id="probability"></span>%</p>
+            </div>
+        </div>
+    
     </div>
     
     <script src="/assets/js/instructions.js"></script>
