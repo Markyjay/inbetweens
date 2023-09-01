@@ -218,8 +218,8 @@ p {
 #deal,
 #hit, #pass {
   margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 24px;
+  padding: 6px 15px;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: red; 
@@ -227,7 +227,7 @@ p {
 }
 
 #betUp {
-  padding: 10px 20px;
+  padding: 7px 12px;
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: yellow; 
@@ -235,7 +235,7 @@ p {
 }
 
 #betDown {
-  padding: 10px 20px;
+  padding: 7px 12px;
   font-size: 16px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   background-color: yellow; 
