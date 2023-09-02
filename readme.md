@@ -68,6 +68,16 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 
 ## User Experience
 
+### User stories
+
+* As a user, I want an introduction to the game and witch a casino style environment.
+* As a user, I want to have easy access to play the game directly from the home page.
+* As a user, I want a clear account of the rules and objectives of the game.
+* As a user, I want notifications of wins and losses throughout the gameplay.
+* As a user, I want to be able to easily access the game instructions in case I forget how the game works.
+* As a user, I want to be able to reset the game so i can play again.
+
+
 ### User Demographic
 The game is aimed toward card players and teachers who would like to use the game to help their students understand the concept of probability and the chance variations through a simple game using cards.
 The game is basic and engaging, designed to be 
