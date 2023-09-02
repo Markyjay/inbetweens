@@ -49,7 +49,7 @@ A live version of the site can be found here: https://markyjay.github.io/inbetwe
 ## The Game
 The dealer lays two random cards in face up side by side and in front of the player, so both dealer and player can see the value of each card, a third card is then laid face down in-between these cards and play begins.
 ## Rank of Cards
-A(high), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2
+Red Ace (High), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2, Black Ace (Low)
 ## Game objective
 To reach 1000 credits.
 ## The Ante
@@ -69,7 +69,8 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 ## UX
 
 ### User Demographic
-The game would be aimed toward card players and teachers who would like to use the game to teach probability to their students.
+The game is aimed toward card players and teachers who would like to use the game to help their students understand the concept of probability and the chance variations through a simple game using cards.
+The game is basic and engaging, designed to be 
 
 
 ### User Goals
@@ -82,7 +83,7 @@ The goal is to create a website that uses a basic card game to teach chance and 
 
 
 ### Color Scheme
-
+The colour scheme is various shades of green to depict the felt of casino tables and yellow to stand out clear from the background. There are also grey borders surrounding the cards and  
 
 
 ### Typography
@@ -91,9 +92,13 @@ The goal is to create a website that uses a basic card game to teach chance and 
 
 ### Images
 
+The pictures of cards were downloaded from https://bicyclecards.com/
+
 
 
 ## Features
+
+Home page introducing the game with a section for the game objective, the ante and the bet. A page dedicated to showing the probability of inbetween cards, and a page where the user can take part in the game and attempt to achieve 1000 credits.
 
 
 ### Header & Logo

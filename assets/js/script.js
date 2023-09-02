@@ -113,8 +113,16 @@ function deal() {
 
     // Update the value1, value2, and value3 variables
     value1 = values.indexOf(card1.substring(0, card1.length - 1));
+    
+    console.log (value1);
+
     value2 = values.indexOf(card2.substring(0, card2.length - 1));
+
+    console.log (value2);
+
     value3 = values.indexOf(card3.substring(0, card3.length - 1));
+
+    console.log (value3);
 
     document.getElementById("bet").textContent = bet;
     document.getElementById("credits").textContent = credits;
@@ -222,9 +230,9 @@ function checkResult() {
     (value3 > value1 && value3 < value2) ||
     (value3 < value1 && value3 > value2)
   ) {
-    credits -= bet; // Credits added for a win
+    credits += bet; // Credits added for a win
   } else {
-    credits += bet; // Credits subtracted for a loss
+    credits -= bet; // Credits subtracted for a loss
   }
 
   // Update the displayed credits with the new value
