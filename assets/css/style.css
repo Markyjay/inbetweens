@@ -68,23 +68,18 @@ li a:hover {
   margin-top: 3vw;  
 }
 
-#card-images {
-
-}
 
 #card-images img {
   justify-content: space-around;
   height: 6vw;
 }
 
-#rank-of-cards {
-  
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #02833c;
+  color: yellow;
 }
-#game-intro {
-  
-}
-
-
 
 /* Instructions page */
 /* .container {
@@ -105,7 +100,7 @@ li a:hover {
   position: absolute;
   z-index: 1;
   left: 30vw;
-  top: 50vw;
+  top: 12.5vw;
   width: 40%;
   height: 12.5%;
   background-color: rgba(0, 0, 0, 0.7);

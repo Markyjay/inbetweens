@@ -66,7 +66,7 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 3.	If the two dealer cards that are laid are consecutive then the dealer must lay two new cards as the player has zero chance of a card being inbetween. If the dealer cards are the same in value then the player can say "split" and the dealer must lay a card on the first card on which the player can choose to bet or pass, and then lay another card on the second card where the player can choose to bet or pass. (This rule will be removed due to technical difficulties but may be able to be applied in future iterations of the game) 
 4.	The betting is usually done by choosing a specific amount to bet, if the player gets an ace and a 2 they usually bet the pot as it’s the highest chance of a win. If an ace or 2 comes for their hit card they lose and so lose the amount of credits equal to the pot. If the card is inbetween the ace and 2 then they win everything in the pot.
 
-## UX
+## User Experience
 
 ### User Demographic
 The game is aimed toward card players and teachers who would like to use the game to help their students understand the concept of probability and the chance variations through a simple game using cards.
