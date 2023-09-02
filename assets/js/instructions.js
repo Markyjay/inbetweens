@@ -17,6 +17,7 @@ const values = [
 ];
 
 const cardImages = {
+  "1♣": "ac.jpg",
   "2♣": "2c.jpg",
   "3♣": "3c.jpg",
   "4♣": "4c.jpg",
@@ -29,7 +30,6 @@ const cardImages = {
   "11♣": "jc.jpg",
   "12♣": "qc.jpg",
   "13♣": "kc.jpg",
-  "1♣": "ac.jpg",
   "2♦": "2d.jpg",
   "3♦": "3d.jpg",
   "4♦": "4d.jpg",
@@ -56,6 +56,7 @@ const cardImages = {
   "12♥": "qh.jpg",
   "13♥": "kh.jpg",
   "14♥": "ah.jpg",
+  "1♠": "as.jpg",
   "2♠": "2s.jpg",
   "3♠": "3s.jpg",
   "4♠": "4s.jpg",
@@ -68,19 +69,15 @@ const cardImages = {
   "11♠": "js.jpg",
   "12♠": "qs.jpg",
   "13♠": "ks.jpg",
-  "1♠": "as.jpg",
-  back: "back.jpg",
 };
 
 function getRandomCard() {
-  // Filter out unwanted cards
   const filteredValues = values.filter(
     (value) =>
       !(value === "1" && (suits.includes("♥") || suits.includes("♦"))) &&
       !(value === "14" && (suits.includes("♣") || suits.includes("♠")))
   );
 
-  // Select a random suit and value from the filtered arrays
   const randomSuit = suits[Math.floor(Math.random() * suits.length)];
   const randomValue =
     filteredValues[Math.floor(Math.random() * filteredValues.length)];
@@ -88,36 +85,68 @@ function getRandomCard() {
   return randomValue + randomSuit;
 }
 
-let card1 = getRandomCard();
-let card2 = getRandomCard();
-let card3 = getRandomCard();
+let card1, card2; // Initialize card variables here
 
-const value1 = values.indexOf(card1.substring(0, card1.length - 1));
-const value2 = values.indexOf(card2.substring(0, card2.length - 1));
-const value3 = values.indexOf(card3.substring(0, card3.length - 1));
+function drawCards() {
+  card1 = getRandomCard();
+  card2 = getRandomCard();
 
-function calculateProbability(value1, value2, value3) {
-  const sortedValues = [value1, value2].sort((a, b) => a - b);
-  document.getElementById(
-    "card1"
-  ).style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
-  document.getElementById(
-    "card2"
-  ).style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
-
-  if (sortedValues[0] < value3 && value3 < sortedValues[1]) {
-    return 1; // In-between condition satisfied
-  } else {
-    return 0; // In-between condition not satisfied
-  }
+  // Update card images here
+  document.getElementById("card1").style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
+  document.getElementById("card2").style.backgroundImage = `url(assets/images/${cardImages[card2]})`;
+  
 }
-const probability = calculateProbability(value1, value2, value3);
+
+// Initial card draw
+drawCards();
+
+function calculateProbability() {
+  const value1 = values.indexOf(card1.substring(0, card1.length - 1));
+  const value2 = values.indexOf(card2.substring(0, card2.length - 1));
+
+ // Calculate the probability of card3 being in between value1 and value2
+ let count = 0;
+ for (let i = 1; i <= 14; i++) {
+   if (i > value1 && i < value2) {
+     count++;
+   }
+ }
+ 
+ return (count / 13); // Probability as a fraction
+}
 
 document.addEventListener("DOMContentLoaded", function () {
-  const probability = document.getElementById("calculate");
-  probability.addEventListener("click", calculate);
+  const calculateButton = document.getElementById("calculate");
+  calculateButton.addEventListener("click", showProbabilityModal);
 });
 
-console.log(
-  `Probability that the third card's value is in between the first two cards' values: ${probability}`
-);
+function showProbabilityModal() {
+  const probability = calculateProbability();
+  const modal = document.getElementById("myModal");
+  const probabilityResult = document.getElementById("probabilityResult");
+
+  const percentage = (probability * 100).toFixed(2);
+
+  probabilityResult.textContent = `Probability: ${percentage}%`;
+
+  modal.style.display = "block";
+}
+
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+document.getElementById("calculate").addEventListener("click", function () {
+  drawCards(); // Draw new cards before calculating probability
+  showProbabilityModal();
+});
+span.addEventListener("click", closeModal);
+
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+});

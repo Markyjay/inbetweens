@@ -102,19 +102,20 @@ li a:hover {
 
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 50%;
+  left: 30vw;
+  top: 50vw;
+  width: 40%;
+  height: 12.5%;
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
+  border-radius: 10px;
   align-items: center;
 }
 
 .modal-content {
-  background-color: white;
+  background-color: rgb(102, 243, 84, 0.7);
   padding: 20px;
   border-radius: 10px;
   position: relative;
