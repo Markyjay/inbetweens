@@ -79,11 +79,11 @@ let card1 = getRandomCard();
 let card2 = getRandomCard();
 let card3 = getRandomCard();
 let dealAgain = true; // Add this variable to track re-deal eligibility
-let allowPass = true;
 
-const value1 = values.indexOf(card1.substring(0, card1.length - 1));
-const value2 = values.indexOf(card2.substring(0, card2.length - 1));
-const value3 = values.indexOf(card3.substring(0, card3.length - 1));
+let value1 = values.indexOf(card1.substring(0, card1.length - 1));
+let value2 = values.indexOf(card2.substring(0, card2.length - 1));
+let value3 = values.indexOf(card3.substring(0, card3.length - 1));
+
 
 function getRandomCard() {
   // Filter out unwanted cards
@@ -161,7 +161,7 @@ function pass() {
     console.log("No possible inbetween value, pass for new cards");
     // Do nothing to prevent deducting credits
     noCharge = 0;
-    credits -= noCharge;
+    credits -= noCharge; // No charge for impossible inbetween
   } else {
     bet = 5; // Set the bet to an automatic 5 credits
     credits -= bet; // Deduct the bet amount from credits
@@ -174,12 +174,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function hit() {
-  card3 = getRandomCard();
-  document.getElementById(
-    "card3"
-  ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
-  
-  checkResult();
+    card3 = getRandomCard();
+    document.getElementById(
+      "card3"
+    ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
+
+    checkResult();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -216,13 +216,15 @@ function checkResult() {
   document.getElementById(
     "card3"
   ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
+
+  // Check if card3 is between card1 and card2
   if (
     (value3 > value1 && value3 < value2) ||
     (value3 < value1 && value3 > value2)
   ) {
-    credits += bet;
+    credits -= bet; // Credits added for a win
   } else {
-    credits -= bet;
+    credits += bet; // Credits subtracted for a loss
   }
 
   // Update the displayed credits with the new value
@@ -230,10 +232,10 @@ function checkResult() {
 
   if (credits >= 1000) {
     alert("Congratulations! You win!");
-    resetGame();
+    reset();
   } else if (credits <= 0) {
     alert("Game over! You lose.");
-    resetGame();
+    reset();
   }
 }
 
