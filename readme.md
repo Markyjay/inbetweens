@@ -70,7 +70,7 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 
 ### User stories
 
-* As a user, I want an introduction to the game and witch a casino style environment.
+* As a user, I want an introduction to the game with a casino style environment.
 * As a user, I want to have easy access to play the game directly from the home page.
 * As a user, I want a clear account of the rules and objectives of the game.
 * As a user, I want notifications of wins and losses throughout the gameplay.
@@ -112,9 +112,10 @@ Home page introducing the game with a section for the game objective, the ante a
 
 
 ### Header & Logo
-
+The header plays on the word itself, placing the card between the games heading.
 
 ### Navigation bar
+
 
 
 

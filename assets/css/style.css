@@ -1,5 +1,5 @@
 body {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -8,13 +8,16 @@ body {
 
 /* Home page Images */
 #game_img {
-height: 7vw;
+  height: 7vw;
 }
 
+#aces_img {
+  height: 7vw;
+}
 
 /* Nav Bar */
 #nav {
-border-style: groove;
+  border-style: groove;
 }
 
 #nav a {
@@ -35,7 +38,7 @@ ul {
 
 li {
   float: left;
-  }
+}
 
 li a {
   /* display: inline-block; */
@@ -43,14 +46,24 @@ li a {
   padding: 10px 10px;
   text-decoration: none;
   height: 2vw;
-  
 }
-
 
 li a:hover {
   background-color: #02993c;
   border-radius: 100px;
   border-style: groove;
+}
+
+p ol li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: yellow;
+}
+
+p li {
+  padding-left: 56px;
+  display: table;
 }
 
 /* Main */
@@ -65,9 +78,8 @@ li a:hover {
   border-radius: 5px;
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: 3vw;  
+  margin-top: 3vw;
 }
-
 
 #card-images img {
   justify-content: space-around;
@@ -130,7 +142,6 @@ li a:hover {
   font-weight: bold;
 }
 
-
 /* Game Container */
 .container {
   width: 80%;
@@ -147,7 +158,7 @@ h1 {
   margin: 0 0 20px 0;
   font-size: 500%;
   color: yellow;
-  }
+}
 
 h2 {
   margin: 0 0 20px 0;
@@ -155,14 +166,13 @@ h2 {
   color: rgb(255, 81, 0);
 }
 
-
 .dealer-area {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
-  }
+}
 
 .play-area {
   display: flex;
@@ -177,8 +187,7 @@ h2 {
   border: 5px solid #696969;
   border-radius: 10px;
   display: flex;
-   
-  }
+}
 
 .player-card {
   width: 16vw;
@@ -188,8 +197,7 @@ h2 {
   border: 5px solid #696969;
   border-radius: 10px;
   display: flex;
-    
-  }
+}
 
 button {
   margin: 5px;
@@ -212,39 +220,37 @@ p {
 }
 
 #deal,
-#hit, #pass {
+#hit,
+#pass {
   margin-top: 20px;
   padding: 6px 15px;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: red; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: red;
   color: white;
 }
 
 #betUp {
   padding: 7px 12px;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: yellow; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: yellow;
   color: black;
 }
 
 #betDown {
   padding: 7px 12px;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: yellow; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: yellow;
   color: black;
 }
 
 #reset {
   padding: 10px 20px;
   font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  background-color: white; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
   color: black;
-
 }
-
-
