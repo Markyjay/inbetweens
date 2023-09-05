@@ -113,7 +113,7 @@ p li {
   position: absolute;
   z-index: 1;
   left: 30vw;
-  top: 12.5vw;
+  top: 50%;
   width: 40%;
   height: 12.5%;
   background-color: rgba(0, 0, 0, 0.7);
