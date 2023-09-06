@@ -77,11 +77,13 @@ let bet = 5;
 let noCharge = 0;
 let card1 = getRandomCard();
 console.log('card1', card1)
-let card2 = getRandomCard();
+let card2 = getRandomCard([card1]);
 console.log('card2', card2)
-let card3 = getRandomCard();
+let card3 = getRandomCard([card1, card2]);
 console.log('card3', card3)
 let dealAgain = true; // Add this variable to track re-deal eligibility
+
+let hitButtonDisabled = false;
 
 let value1 = values.indexOf(card1.substring(0, card1.length - 1));
 console.log('value1', value1);
@@ -112,22 +114,18 @@ function deal() {
 
   if (credits >= 5 && dealAgain) {
     card1 = getRandomCard();
-    card2 = getRandomCard();
-    card3 = getRandomCard();
+    card2 = getRandomCard([card1]);
+    card3 = getRandomCard([card1, card2]);
     
     bet = 5; // Set the bet to an automatic 5 credits
     credits -= bet; // Deduct the bet amount from credits
 
     // Update the value1, value2 variables
     value1 = values.indexOf(card1.substring(0, card1.length - 1));
-    
     console.log ("value1", value1);
 
     value2 = values.indexOf(card2.substring(0, card2.length - 1));
-
     console.log ("value2", value2);
-
-  
 
     document.getElementById("bet").textContent = bet;
     document.getElementById("credits").textContent = credits;
@@ -146,6 +144,11 @@ function deal() {
 
     // Allow cards to be dealt again due to impossible outcome
     dealAgain = true;
+
+    // Enable the "Hit" button after dealing new cards
+    hitButtonDisabled = false;
+    document.getElementById("hit").disabled = false;
+
   } else {
     alert("Not enough credits to deal.");
   }
@@ -159,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function pass() {
   card1 = getRandomCard();
-  card2 = getRandomCard();
+  card2 = getRandomCard([card1]);
 
     // Update the value1, value2 variables
     value1 = values.indexOf(card1.substring(0, card1.length - 1));
@@ -196,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function hit() {
-    card3 = getRandomCard();
+    card3 = getRandomCard([card1, card2]);
 
     value3 = values.indexOf(card3.substring(0, card3.length - 1));
 
@@ -211,7 +214,13 @@ function hit() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const hitButton = document.getElementById("hit");
-  hitButton.addEventListener("click", hit);
+  hitButton.addEventListener("click", function(){
+    if (!hitButtonDisabled) {
+      hitButtonDisabled = true;
+      hitButton.disabled = true;
+      hit();
+    }
+  });
 });
 
 function changeBet(amount) {
