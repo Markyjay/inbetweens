@@ -65,9 +65,15 @@ li a:hover {
 }
 
 ol li {
-  padding-left: 0;
-  margin-left: 0;
+  text-align: left;
   color: black;
+}
+
+body div p {
+  margin-left: 2vw;
+}
+.main-container div p {
+  text-align: center;
 }
 
 /* Main */
@@ -228,6 +234,7 @@ p {
   font-size: 20px;
   margin-bottom: 10px;
   color: yellow;
+  text-align: left;
 }
 
 #credits {
