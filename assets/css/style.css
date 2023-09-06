@@ -119,12 +119,6 @@ body div p {
 
 
 /* Instructions page */
-/* .container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-} */
 
 .card {
   width: 100px;
@@ -226,15 +220,20 @@ h2 {
 
 button {
   margin: 5px;
-  font-weight: bolder;
   border-radius: 50%;
+  color: white;
+}
+
+#calculate {
+height: 3vw;
+width: 10vw;
+
 }
 
 p {
   font-size: 20px;
   margin-bottom: 10px;
   color: yellow;
-  text-align: left;
 }
 
 #credits {
@@ -280,3 +279,45 @@ p {
   background-color: white;
   color: black;
 }
+
+/* Media quieres */
+
+@media only screen and (min-width: 1200px) { }
+
+/* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
+
+
+@media only screen and (max-width: 1200px) { }
+
+/* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
+
+@media only screen and (max-width: 1024px) { }
+
+/* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
+
+@media only screen and (max-width: 768px) { }
+
+/* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
+@media only screen and (max-width: 480px) { }
+
+/* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
