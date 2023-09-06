@@ -220,8 +220,14 @@ h2 {
 
 button {
   margin: 5px;
-  font-weight: bolder;
   border-radius: 50%;
+  color: white;
+}
+
+#calculate {
+height: 3vw;
+width: 10vw;
+
 }
 
 p {
