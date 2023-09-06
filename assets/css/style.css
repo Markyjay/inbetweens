@@ -9,11 +9,21 @@ body {
 /* Home page Images */
 #game_img {
   height: 7vw;
+  border-radius: 2px;
 }
 
 #aces_img {
   height: 7vw;
-  padding: 5vw;
+  margin-bottom: 15px;
+  margin-left: 12px;
+  border-radius: 2px;
+}
+
+#rank_img {
+  justify-content: space-around;
+  height: 6vw;
+  border-radius: 2px;
+  margin-left: 3px;
 }
 
 /* Nav Bar */
@@ -80,11 +90,6 @@ p li {
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3vw;
-}
-
-#card-images img {
-  justify-content: space-around;
-  height: 6vw;
 }
 
 .footer {
