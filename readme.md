@@ -79,8 +79,8 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 
 
 ### User Demographic
-The game is aimed toward card players and teachers who would like to use the game to help their students understand the concept of probability and the chance variations through a simple game using cards.
-The game is basic and engaging, designed to be 
+The game is aimed toward people who like to play card games and teachers who would like to use a game to help their students understand the concept of probability and chance variations through a simple game using cards.
+The game is simple, fast and designed to be engaging. The game involes gambling but offers no risk as it does not use money, the player converts one hundred credits in to 1000 credits to accomplish a win.  
 
 
 ### User Goals
@@ -88,7 +88,7 @@ The goal is to create a website that uses a basic card game to teach chance and 
 
 
 ### Design
-
+Favicon https://www.favicon.cc/?action=icon&file_id=761394
 
 
 

@@ -9,11 +9,21 @@ body {
 /* Home page Images */
 #game_img {
   height: 7vw;
+  border-radius: 2px;
 }
 
 #aces_img {
   height: 7vw;
-  padding: 5vw;
+  margin-bottom: 15px;
+  margin-left: 12px;
+  border-radius: 2px;
+}
+
+#rank_img {
+  justify-content: space-around;
+  height: 6vw;
+  border-radius: 2px;
+  margin-left: 3px;
 }
 
 /* Nav Bar */
@@ -42,7 +52,6 @@ li {
 }
 
 li a {
-  /* display: inline-block; */
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -55,16 +64,16 @@ li a:hover {
   border-style: groove;
 }
 
-p ol li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: yellow;
+ol li {
+  text-align: left;
+  color: black;
 }
 
-p li {
-  padding-left: 56px;
-  display: table;
+body div p {
+  margin-left: 2vw;
+}
+.main-container div p {
+  text-align: center;
 }
 
 /* Main */
@@ -81,11 +90,7 @@ p li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3vw;
 }
-
-#card-images img {
-  justify-content: space-around;
-  height: 6vw;
-}
+/* Footer */
 
 .footer {
   text-align: center;
@@ -93,6 +98,25 @@ p li {
   background-color: #02833c;
   color: yellow;
 }
+
+.footer a {
+    font-size: 20px;
+    color: inherit;
+    border: 1px solid #d4f807;
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  
+  .footer a:hover {
+    opacity: 1;
+  }
+
 
 /* Instructions page */
 /* .container {
@@ -210,6 +234,7 @@ p {
   font-size: 20px;
   margin-bottom: 10px;
   color: yellow;
+  text-align: left;
 }
 
 #credits {
