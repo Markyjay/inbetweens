@@ -52,7 +52,6 @@ li {
 }
 
 li a {
-  /* display: inline-block; */
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -65,16 +64,10 @@ li a:hover {
   border-style: groove;
 }
 
-p ol li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: yellow;
-}
-
-p li {
-  padding-left: 56px;
-  display: table;
+ol li {
+  padding-left: 0;
+  margin-left: 0;
+  color: black;
 }
 
 /* Main */
@@ -91,6 +84,7 @@ p li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3vw;
 }
+/* Footer */
 
 .footer {
   text-align: center;
@@ -98,6 +92,25 @@ p li {
   background-color: #02833c;
   color: yellow;
 }
+
+.footer a {
+    font-size: 20px;
+    color: inherit;
+    border: 1px solid #d4f807;
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  
+  .footer a:hover {
+    opacity: 1;
+  }
+
 
 /* Instructions page */
 /* .container {
