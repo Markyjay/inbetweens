@@ -33,8 +33,7 @@ A live version of the site can be found here: https://markyjay.github.io/inbetwe
   - [Main Image](#Main-image "Main Image")
   - [Main Section](#main-section "Main Section")
   - [Game Page](#game "Game Page")
-  - [Instructions](#instructions "Instructions")
-  - [Score](#score "Score")
+  - [Calculator](#Calculator "Calculator")
   - [Footer](#footer "Footer")
 - [Technologies Used](#technologies-used "Technologies Used")
 - [Testing](#testing "Testing")
@@ -93,7 +92,7 @@ Favicon https://www.favicon.cc/?action=icon&file_id=761394
 
 
 ### Color Scheme
-The colour scheme is various shades of green to depict the felt of casino tables and yellow to stand out clear from the background. There are also grey borders surrounding the cards and  
+The colour scheme is various shades of green to depict the felt of casino tables and yellow and orange text to stand out clear from the background. There are also grey borders surrounding the cards and  
 
 
 ### Typography
@@ -122,15 +121,11 @@ The header plays on the word itself, placing the card between the games heading.
 ### Main Section
 
 
+### Calculator
+
 ### Game Page
 
 
-
-### Instructions
-
-
-
-### Score
 
 
 

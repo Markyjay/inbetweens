@@ -12,14 +12,14 @@ body {
   border-radius: 2px;
 }
 
-#aces_img {
+.aces_img {
   height: 7vw;
   margin-bottom: 15px;
   margin-left: 12px;
   border-radius: 2px;
 }
 
-#rank_img {
+.rank_img {
   justify-content: space-around;
   height: 6vw;
   border-radius: 2px;
@@ -267,6 +267,7 @@ h2 {
   border: 5px solid #696969;
   border-radius: 10px;
   display: flex;
+  margin-top: -95px;
 }
 
 button {
