@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const suits = ["♠", "♥", "♦", "♣"];
 const values = [
   "1",
@@ -76,11 +77,11 @@ let credits = 100;
 let bet = 5;
 let noCharge = 0;
 let card1 = getRandomCard();
-console.log('card1', card1)
+console.log('card1', card1);
 let card2 = getRandomCard([card1]);
-console.log('card2', card2)
+console.log('card2', card2);
 let card3 = getRandomCard([card1, card2]);
-console.log('card3', card3)
+console.log('card3', card3);
 let dealAgain = true; // Add this variable to track re-deal eligibility
 
 let hitButtonDisabled = false;
@@ -100,7 +101,7 @@ function getRandomCard() {
       !(value === "14" && (suits.includes("♣") || suits.includes("♠")))
   );
 
-  console.log("filteredValues", filteredValues)
+  console.log("filteredValues", filteredValues);
 
   // Select a random suit and value from the filtered arrays
   const randomSuit = suits[Math.floor(Math.random() * suits.length)];
@@ -140,7 +141,7 @@ function deal() {
     document.getElementById("card3").textContent = "";
     document.getElementById(
       "card3"
-    ).style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
+    ).style.backgroundImage = `url(assets/images/${cardImages.back})`;
 
     // Allow cards to be dealt again due to impossible outcome
     dealAgain = true;
@@ -249,13 +250,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function checkResult() {
-  console.log('checkResult', checkResult)
-  console.log('card1', card1)
-  console.log('card2', card2)
-  console.log('card3', card3)
-  console.log('value1', value1)
-  console.log('value2', value2)
-  console.log('value3', value3)
+  console.log('checkResult', checkResult);
+  console.log('card1', card1);
+  console.log('card2', card2);
+  console.log('card3', card3);
+  console.log('value1', value1);
+  console.log('value2', value2);
+  console.log('value3', value3);
   document.getElementById(
     "card3"
   ).style.backgroundImage = `url(assets/images/${cardImages[card3]})`;
@@ -298,13 +299,13 @@ function reset() {
   document.getElementById("bet").textContent = bet;
   document.getElementById(
     "card1"
-  ).style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
+  ).style.backgroundImage = `url(assets/images/${cardImages.back})`;
   document.getElementById(
     "card2"
-  ).style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
+  ).style.backgroundImage = `url(assets/images/${cardImages.back})`;
   document.getElementById(
     "card3"
-  ).style.backgroundImage = `url(assets/images/${cardImages["back"]})`;
+  ).style.backgroundImage = `url(assets/images/${cardImages.back})`;
 }
 
 reset();

@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const suits = ["♠", "♥", "♦", "♣"];
 const values = [
   "1",

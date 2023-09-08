@@ -1,24 +1,15 @@
 # Inbetweens Card Game
 
-Image of site
+<img src="assets/documentation/responsiveness.jpg" alt="responsiveness"/>
 
 Welcome to Inbetweens the Card Game! Test your luck by placing bets on whether the next card will be "inbetween"
 
-Inbetween is a card game I played as a teenager, it’s a betting game usually played for money. The game will be adapted for the purposes of this project. As a teacher I used to play games like this with my students using tokens to get them to understand the concept of probability and chance and my students found it very enjoyable and learned quickly to ascertain high and low probabilities and the highs and lows of risk-taking. 
+Inbetween is a card game I played as a teenager, it’s a betting game usually played for money. The game will be adapted for the purposes of this project. In later years as a teacher I adapted games like this to help my students to understand the concept of probability and chance and they found it very enjoyable and learned quickly to ascertain high and low probabilities and the highs and lows of risk-taking. 
 
 
 A live version of the site can be found here: https://markyjay.github.io/inbetweens/
 
 # Table of contents
-
-- [Inbetweens - The Game](#the-game "The Game")
-    - [Rank Of Cards](#rank-of-cards "Rank of Cards")
-    - [Game Objective](#game-objective "Game Objective")
-    - [The Ante](#the-ante "The Ante")
-    - [The Bet](#the-bet "The Bet")
-    - [Adaptations for project purposes](#adaptations-for-project-purposes "Adaptations for project purposes")
-    
-    <br>
 
 - [UX](#ux "UX")
   - [User Demographic](#user-demographic "User Demographic")
@@ -32,8 +23,14 @@ A live version of the site can be found here: https://markyjay.github.io/inbetwe
   - [Navigation Bar](#navigation-bar "Navigation Bar")
   - [Main Image](#Main-image "Main Image")
   - [Main Section](#main-section "Main Section")
+  - [Calculator Page](#Calculator "Calculator Page")
   - [Game Page](#game "Game Page")
-  - [Calculator](#Calculator "Calculator")
+  - [Inbetweens - The Game](#the-game "The Game")
+    - [Rank Of Cards](#rank-of-cards "Rank of Cards")
+    - [Game Objective](#game-objective "Game Objective")
+    - [The Ante](#the-ante "The Ante")
+    - [The Bet](#the-bet "The Bet")
+    - [Adaptations for project purposes](#adaptations-for-project-purposes "Adaptations for project purposes")
   - [Footer](#footer "Footer")
 - [Technologies Used](#technologies-used "Technologies Used")
 - [Testing](#testing "Testing")
@@ -45,25 +42,6 @@ A live version of the site can be found here: https://markyjay.github.io/inbetwe
 - [Acknowledgements](#acknowledgements "Acknowledgements")
 
 
-## The Game
-The dealer lays two random cards in face up side by side and in front of the player, so both dealer and player can see the value of each card, a third card is then laid face down in-between these cards and play begins.
-## Rank of Cards
-Red Ace (High), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2, Black Ace (Low)
-## Game objective
-To reach 1000 credits.
-## The Ante
-Once the first two cards are dealt the player chooses whether they wish to be dealt the hit card. For example, if the first two cards are consecutive then there is no card in-between and so the player passes and two more cards are dealt, the same if the first two cards are equal in value. For this reason the player pays 5 credits only when the initial two cards are one or more values apart, this way the player has a chance but also cannot continue to hold their bet until they are dealt an ace and a 2 which will guarantee a win. Therefore, the player plays 5 credits ante to the pot each time that a playable set of cards are dealt.
-
-## The Bet
-The bet will then commence once a set of playable cards are dealt and the player puts 5 credits to the pot, then the hit card is placed face down and the player chooses whether to either pass, double, triple, quadruple etc players bet on the premise that the hit card is in-between the dealers cards. The player can only bet with the credits they have.
-
-If the hit card is not between the dealers cards then the player loses the bet. If the hit card is the same value as either of the dealers cards then again the player loses the bet as it is not in-between. If the card is in-between, then the player wins the pot and play continues from the beginning. The player wins the game outright if they reach 1000 credits.
-
-## Adaptations for project purposes
-1.	The game can be played with multiple players but as this is my first time creating a game using JavaScript I will keep it to a single player and the dealer. It may be something to expand upon once I improve my skills in coding. 
-2.	The winner is usually the player with the most amount of chips at the end of the game or the game can end when the player loses everything to the dealer.
-3.	If the two dealer cards that are laid are consecutive then the dealer must lay two new cards as the player has zero chance of a card being inbetween. If the dealer cards are the same in value then the player can say "split" and the dealer must lay a card on the first card on which the player can choose to bet or pass, and then lay another card on the second card where the player can choose to bet or pass. (This rule will be removed due to technical difficulties but may be able to be applied in future iterations of the game) 
-4.	The betting is usually done by choosing a specific amount to bet, if the player gets an ace and a 2 they usually bet the pot as it’s the highest chance of a win. If an ace or 2 comes for their hit card they lose and so lose the amount of credits equal to the pot. If the card is inbetween the ace and 2 then they win everything in the pot.
 
 ## User Experience
 
@@ -87,6 +65,16 @@ The goal is to create a website that uses a basic card game to teach chance and 
 
 
 ### Design
+
+
+
+
+
+
+Figma Design <img src="assets/documentation/figmadesign.jpg" alt="figma-design"/>
+
+
+
 Favicon https://www.favicon.cc/?action=icon&file_id=761394
 
 
@@ -97,6 +85,7 @@ The colour scheme is various shades of green to depict the felt of casino tables
 
 ### Typography
 
+font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
 
 ### Images
@@ -111,26 +100,45 @@ Home page introducing the game with a section for the game objective, the ante a
 
 
 ### Header & Logo
-The header plays on the word itself, placing the card between the games heading.
+The header plays on the word itself, placing the card between the games heading. The card in between has a href function that takes the user directly to the game. Otherwise they can use the navigation bar to go to the game itself.
 
 ### Navigation bar
-
-
-
+I kept the navigation bar basic to stick with the retro theme of a casino style card site. 
 
 ### Main Section
 
 
-### Calculator
+### Calculator Page
+This page is dedicated toward learning about the probability of a win or loss.
+
+
 
 ### Game Page
 
+#### The Game
+The dealer lays two random cards face up side by side and in front of the player, so both dealer and player can see the value of each card, a third card is then laid face down in-between these cards and play begins.
+#### Rank of Cards
+Red Ace (High), K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2, Black Ace (Low)
+#### Game objective
+To reach 1000 credits.
+#### The Ante
+Once the first two cards are dealt the player chooses whether they wish to be dealt the hit card. For example, if the first two cards are consecutive then there is no card in-between and so the player passes and two more cards are dealt, the same if the first two cards are equal in value. For this reason the player pays 5 credits only when the initial two cards are one or more values apart, this way the player has a chance but also cannot continue to hold their bet until they are dealt cards that guarantee a win. In short, the player pays 5 credits ante to the pot each time that a playable set of cards are dealt.
 
+#### The Bet
+The bet will then commence once a set of playable cards are dealt and the player puts 5 credits to the pot, then the hit card is placed face down and the player chooses whether to either pass, double, triple, quadruple etc players bet on the premise that the hit card value is in-between the dealer cards values. The player can only bet with the credits they have.
 
+If the hit card is not between the dealers cards then the player loses the bet. If the hit card is the same value as either of the dealers cards then again the player loses the bet as it is not in-between. If the card is in-between, then the player wins the pot and play continues from the beginning. The player wins the game outright if they reach 1000 credits.
+
+#### Adaptations for project purposes
+1.	The game can be played with multiple players but as this is my first time creating a game using JavaScript I will keep it to a single player and the dealer. It may be something to expand upon once I improve my skills in coding. 
+2.	The winner is usually the player with the most amount of chips at the end of the game or the game can end when the player loses everything to the dealer.
+3.	If the two dealer cards that are laid are consecutive then the dealer must lay two new cards as the player has zero chance of a card being inbetween. If the dealer cards are the same in value then the player can say "split" and the dealer must lay a card on the first card on which the player can choose to bet or pass, and then lay another card on the second card where the player can choose to bet or pass. (This rule will be removed due to technical difficulties but may be able to be applied in future iterations of the game) 
+4.	The betting is usually done by choosing a specific amount to bet, if the player gets a red ace and a black ace they usually bet the pot as it’s the highest chance of a win. If either of the remaining aces are played for their hit card they lose and so lose the amount of credits equal to the pot. If the card is inbetween the aces then the player wins everything in the pot.
 
 
 ### Footer
-
+The footer contains the copyright logo, with a sentance "A Probability game : Inbetweens by Mark Young 2023"
+Also contained in the footer are href access to my linkedIn and Github account.
 
 
 ## Technologies Used
@@ -142,21 +150,85 @@ The header plays on the word itself, placing the card between the games heading.
 
 
 ## Testing
-### Validator Testing
+
+# Validator testing
+Validator.nu/LV http://validator.w3.org/services
+-HTML5
+  - No errors were found using W3C HTML validator testing. 
+ 
+<img src="/documentation/htmlvalidating.jpg" alt="HTML Validating"/>
+
+-	CSS3
+  - No errors were found using W3C HTML validator testing.
+
+<img src="/documentation/cssvalidation.jpg" alt="CSS Validating"/>
+
+## Lighthouse testing
+
+As I progress through the course i hope to learn more about HTML and CSS code to imrove the results of my lighthouse testing.
+
+<img src="/documentation/lighthousetesting.jpg" alt="Lighthouse testing"/>
 
 ### Bugs & Errors
 
-
-## Deployment
-
-### Media
+1. 
 
 
-### Other Helpful Resources
+* Development
+
+* Site Design
+The site application Figma was used to portray an overall image of the project beforehand.
+https://www.figma.com/
+
+* Color Pallete
+To choose the correct color pallete this site was utilised.
+https://coolors.co/
+
+* Font styling
+The following site was used to generate a good combination of font that worked well with the theme of the site.
+
+https://cdnjs.com/libraries/font-awesome
+
+* Logo Design
+I decided to input the well known backing of a Bicyle playing card. The image was taken from the official site.
+
+https://www.bicycle.com/
+
+* Responsivity
+
+This site was recommended by code institute and used to portray the responsivity of the project. 
+
+https://ui.dev/amiresponsive
+
+## Other Sources
+
+* Learning CSS Grid
+To learn CCS grid these sites were utilised.
+https://www.w3schools.com/css/css_grid.asp
+https://codepen.io/waffleknit/pen/KJEpLp
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY
+
+* Learning JavaScript
+To learn the various methods of JavaScript these sites were utilized.
+https://www.w3schools.com/css/css_grid.asp
+
+* Error research
+To fix errors in my code i utilised sites such as
+https://stackoverflow.com/
+https://www.youtube.com/
+https://www.w3schools.com/
 
 
+## Acknowledgements
+For inpiration in general, for code, design help and advice, I'd like to give thanks to; 
 
-### Acknowledgements
+- Jubril my mentor at Code Institute who was very patient and generous with his time.
+
+- Kyle Clow, Stephen Dawson and Jody Murray fellow students I met during hackathons i have taken part in. They helped me kindly and patiently with advice and encouragement.
+
+- Patricia Young my mother who has been encouraging and patient with me throughout the project.
+
+- Slack members and the code institute tutoring service were also helpful throughout the project.
 
 
 
