@@ -12,14 +12,14 @@ body {
   border-radius: 2px;
 }
 
-#aces_img {
+.aces_img {
   height: 7vw;
   margin-bottom: 15px;
   margin-left: 12px;
   border-radius: 2px;
 }
 
-#rank_img {
+.rank_img {
   justify-content: space-around;
   height: 6vw;
   border-radius: 2px;
@@ -118,7 +118,33 @@ body div p {
   }
 
 
-/* Instructions page */
+/* Calculator page */
+
+.how-to-win {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: green;
+  border-radius: 10px;
+  border-style: inset;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5vw;
+}
+
+.how-to-win h2 {
+  font-size: 200%;
+
+}
+
+.how-to-win h3 {
+  font-size: 120%;
+  color: orangered;
+  }
+
+  .how-to-win p {
+    text-align: left;
+    font-size: 100%;
+  }
 
 .card {
   width: 100px;
@@ -160,6 +186,31 @@ body div p {
   font-size: 20px;
   font-weight: bold;
 }
+
+.dealer-card-scenario {
+  width: 10.6vw;
+  height: 15vw;
+  background-size: cover;
+  border: 2px solid #696969;
+  border-radius: 6px;
+  display: flex;
+  margin: 0 5vw 0 5vw;
+}
+
+.player-card-scenario {
+  width: 10.6vw;
+  height: 15vw;
+  background-size: cover;
+  border: 2px solid #696969;
+  border-radius: 6px;
+  display: flex;
+  margin-top: -10vw;
+}
+
+#scenario_img {
+  border-radius: 6px;
+}
+
 
 /* Game Container */
 .container {
@@ -216,6 +267,7 @@ h2 {
   border: 5px solid #696969;
   border-radius: 10px;
   display: flex;
+  margin-top: -95px;
 }
 
 button {
@@ -291,33 +343,73 @@ p {
 /* Inbetweens */
 
 
-@media only screen and (max-width: 1200px) { }
-
-/* Main Page */
-
-/* Calculator */
-
-/* Inbetweens */
-
-@media only screen and (max-width: 1024px) { }
-
-/* Main Page */
+@media only screen and (max-width: 1200px) {
+  /* Main Page */
 
 /* Calculator */
 
 /* Inbetweens */
+}
 
-@media only screen and (max-width: 768px) { }
 
-/* Main Page */
 
-/* Calculator */
-
-/* Inbetweens */
-@media only screen and (max-width: 480px) { }
-
-/* Main Page */
+@media only screen and (max-width: 1024px) { 
+  /* Main Page */
 
 /* Calculator */
 
 /* Inbetweens */
+}
+
+
+
+@media only screen and (max-width: 768px) { 
+  /* Main Page */
+
+/* Calculator */
+
+/* Inbetweens */
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* Main Page */
+h1 {
+  font-size: 200%;
+}
+
+p{
+  font-size: 12px;
+}
+
+ol li {
+  font-size: 10px;
+}
+
+/* Calculator */
+
+/* Inbetweens */
+}
+
+
+
+@media only screen and (max-width: 480px) { 
+
+  /* Main Page */
+h1 {
+  font-size: 200%;
+}
+
+p {
+  font-size: 12px;
+}
+
+ol li {
+  font-size: 10px;
+}
+
+/* Calculator */
+
+/* Inbetweens */
+}
+
