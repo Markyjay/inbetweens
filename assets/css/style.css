@@ -8,12 +8,12 @@ body {
 
 /* Home page Images */
 #game_img {
-  height: 7vw;
+  height: 8vw;
   border-radius: 2px;
 }
 
 .aces_img {
-  height: 7vw;
+  height: 8vw;
   margin-bottom: 15px;
   margin-left: 12px;
   border-radius: 2px;
@@ -21,7 +21,7 @@ body {
 
 .rank_img {
   justify-content: space-around;
-  height: 6vw;
+  height: 7vw;
   border-radius: 2px;
   margin-left: 3px;
 }
@@ -65,8 +65,10 @@ li a:hover {
 }
 
 ol li {
+  width:100%;
   text-align: left;
   color: black;
+  margin: 0 5px;
 }
 
 body div p {
@@ -141,9 +143,9 @@ body div p {
   color: orangered;
   }
 
-  .how-to-win p {
-    text-align: left;
-    font-size: 100%;
+.how-to-win p {
+  text-align: left;
+  font-size: 100%;
   }
 
 .card {
@@ -226,7 +228,7 @@ body div p {
 
 h1 {
   margin: 0 0 20px 0;
-  font-size: 500%;
+  font-size: 800%;
   color: yellow;
 }
 
@@ -355,6 +357,9 @@ p {
 
 @media only screen and (max-width: 1024px) { 
   /* Main Page */
+  h1 {
+    font-size: 500%;
+  }
 
 /* Calculator */
 
@@ -365,6 +370,18 @@ p {
 
 @media only screen and (max-width: 768px) { 
   /* Main Page */
+  h1 {
+    font-size: 400%;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+
+  ol li {
+    margin-left: -3px;
+    font-size: 10px;
+  }
 
 /* Calculator */
 
@@ -375,7 +392,7 @@ p {
 @media only screen and (max-width: 480px) {
   /* Main Page */
 h1 {
-  font-size: 200%;
+  font-size: 300%;
 }
 
 p{
@@ -383,6 +400,7 @@ p{
 }
 
 ol li {
+  margin-left: -3px;
   font-size: 10px;
 }
 
@@ -397,7 +415,7 @@ ol li {
 
   /* Main Page */
 h1 {
-  font-size: 200%;
+  font-size: 300%;
 }
 
 p {
