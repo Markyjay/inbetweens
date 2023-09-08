@@ -38,7 +38,7 @@
         aria-label="Takes user to inbetweens game"><img src="assets/images/as.jpg" alt="Ace_spades" id="aces_img"></a></h1>
      <div class="container">
         <h2>Probability Calculator</h2>
-        <div class="dealer-area" id="probability-testing">
+        <div class="dealer-area">
             <div class="dealer-card" id="card1"></div>
             <div class="dealer-card" id="card2"></div>
         </div>
@@ -54,39 +54,65 @@
                 <p id="probabilityResult">Probability: </p>
             </div>
         </div>
+    </div>
         <div class="how-to-win">
+            <h2>How To Win</h2>
             <p>
                 Use the Probability Calculator above to see the chances that a third cards value is in-between two random cards.
 
-                <p>In order to win the player must consider the probability and place the bet carefully.</p>
+                <p>In order to win the player must consider the probability and place the bet carefully. Lets look at three senarios. </p>
                 
-               <p> Consider the highest probability. </p> 
+                <h3>Senario 1</h3>
+                <p> Consider the highest probability. </p> 
                 <p>The dealer lays a Black Ace and a Red Ace.</p>
                 <p>This means that the only cards that will result in a loss of your bet is the last two aces. 
                 Since there are 50 cards left in the deck and 48 of these cards will result in a win then 
                 the player has a 96% chance of winning. It is in this scenario that the player should bet 
                 all credits in their possesion.</p>
-                
+                <div>
+                    <div class="dealer-area">
+                        <div class="dealer-card-scenario" id="card1"><img src="assets/images/as.jpg" alt="Ace_spades" id="scenario_img"></div>
+                        <div class="dealer-card-scenario" id="card2"><img src="assets/images/ah.jpg" alt="Ace_hearts" id="scenario_img"></div>
+                    </div>
+                    <div class="play-area">
+                        <div class="player-card-scenario" id="card3"><img src="assets/images/back.jpg" alt="back" id="scenario_img"></div>
+                    </div>
+                </div>
+                <h3>Senario 2</h3>
                 <p>Consider the lowest probability. (not including the zero chance when equal or consecutive cards arise)</p>
                 <p>The dealer lays any two cards that are one apart. (ie. 5 and a 7)</p>
                 <p>This means there are only four cards that can guarantee a win (the four 6's) and so only 4 out 50 cards
                 or an 8% chance of a win.
                 It is in this scenario that the player bet only the ante, the lowest bet allowed in a playable scenario.</p>
-
-
+                <div>
+                    <div class="dealer-area">
+                        <div class="dealer-card-scenario" id="card1"><img src="assets/images/5c.jpg" alt="five_clubs" id="scenario_img"></div>
+                        <div class="dealer-card-scenario" id="card2"><img src="assets/images/7d.jpg" alt="seven_diamonds" id="scenario_img"></div>
+                    </div>
+                    <div class="play-area">
+                        <div class="player-card-scenario" id="card3"><img src="assets/images/back.jpg" alt="back" id="scenario_img"></div>
+                    </div>
+                </div>
+                <h3>Senario 3</h3>
                 <p>Consider a mid-range probability. (13 numbers so any number 7 or more apart)</p>
                 <p>The dealer lays any two cards a value of 7 apart. (ie. 5 and a Queen(value 12))</p>
                 <p>This means there are 6 sets of 4 cards that can guarantee a win (All 6's, 7's, 8's, 9's, 10's, Jack's)
                 6 times 4 is 24 so 24 out of 50 cards is 48% chance of a win.
                 It is in this scenario that the player bet roughly half the credits available.</p>
-
-            </p>
+                <div>
+                    <div class="dealer-area">
+                        <div class="dealer-card-scenario" id="card1"><img src="assets/images/5h.jpg" alt="five_hearts" id="scenario_img"></div>
+                        <div class="dealer-card-scenario" id="card2"><img src="assets/images/qh.jpg" alt="Queen_hearts" id="scenario_img"></div>
+                    </div>
+                    <div class="play-area">
+                        <div class="player-card-scenario" id="card3"><img src="assets/images/back.jpg" alt="back" id="scenario_img"></div>
+                    </div>
+                </div>
         <div> 
 
         </div>
-        </div>
-           
     </div>
+           
     <br>
     <div class="footer">
         <p>&copy; Inbetweens : A Probability Game created by Mark Young 2023</p>
@@ -101,3 +127,4 @@
 </body>
 
 </html>
+
