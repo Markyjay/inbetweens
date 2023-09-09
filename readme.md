@@ -180,7 +180,12 @@ Validator.nu/LV http://validator.w3.org/services
 -HTML5
   - No errors were found using W3C HTML validator testing. 
  
-<img src="assets/documentation/htmlvalidating.jpg" alt="HTML Validating"/>
+<img src="assets/documentation/indexhtmlvalidation.jpg" alt="IndexHTML Validating"/>
+<img src="assets/documentation/calculatorhtmlvalidation.jpg" alt="CalculatorHTML Validating"/>
+<img src="assets/documentation/inbetweenshtmlvalidation.jpg" alt="InbetweenHTML Validating"/>
+
+  - trailing slash on void elements occured on one html file but no effects
+  <img src="assets/documentation/trailingslashelements.jpg" alt="IndexHTML Validating"/>
 
 -	CSS3
   - No errors were found using W3C HTML validator testing.
@@ -190,7 +195,8 @@ Validator.nu/LV http://validator.w3.org/services
 - JavaScript
  - No errors were found using JSHint validator testing
 
- <img src="assets/documentation/jshintvalidation.jpg" alt="JS Validating"/>
+ <img src="assets/documentation/scriptjshintvalidation.jpg" alt="Scriptjs Validating"/>
+ <img src="assets/documentation/calculatorjshintvalidation.jpg" alt="Calculatorjs Validating"/>
 
 ### Lighthouse testing
 
