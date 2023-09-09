@@ -72,46 +72,71 @@ At this point i designed the rest of the site on figma.com and decided to make i
 Figma Design <img src="assets/documentation/figmadesign.jpg" alt="figma-design"/>
 
 
+The favicon was chosen from a generic set of playing card related icons. its a gif the flicks through each of the suits of cards.
 
 Favicon https://www.favicon.cc/?action=icon&file_id=761394
 
 
 
 ### Color Scheme
-The colour scheme is various shades of green to depict the felt of casino tables and yellow and orange text to stand out clear from the background. There are also grey borders surrounding the cards and  
-
+The colour scheme is various shades of green to depict the felt of casino tables and yellow and orange text to stand out clear from the background. There are also grey borders surrounding the cards and black writing for the listed points in the ante and betting instructions section.
 
 ### Typography
-
-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
+I chose a generic font as other fonts did not seem to fit the theme of a ninties style casino card game site.
+I chose "Franklin Gothic Medium" for the heading of inbetweens and "Arial Narrow" Arial and sans-serif for the paragraphs and subheadings.
 
 ### Images
 
-The pictures of cards were downloaded from https://bicyclecards.com/
+The pictures of cards were downloaded from https://bicyclecards.com/. I took the clearest images of each card i could find and used windows Print 3d to crop the images to size. I name each image by its number value and the fist letter of its suit. I also did the same the iconic back cover of a bicycle playing card. Having a choice of red or blue i went with blue.
 
+<img src="assets/images/back.jpg" alt="blue card backing"/>
 
 
 ## Features
 
-Home page introducing the game with a section for the game objective, the ante and the bet. A page dedicated to showing the probability of inbetween cards, and a page where the user can take part in the game and attempt to achieve 1000 credits.
+* Home Page
+The home page introduces the game with a section allocated to the ranking of cards and the game objective. A seperate section dedicated to the explanation of the ante and the bet. 
+* Calculator
+The calculator page is a page that provides a basic javaScript macine to show the probability of inbetween cards and below this a section that describes three scenarios so that the user understands how to win the 1000 credits.
+* Inbetweens
+The game itself has its own page and can be accessed from the other pages by clicking the card inbetween the heading. The user can challenge themselves to beat the ods and achieve the 1000 credit goal.
 
 
 ### Header & Logo
-The header plays on the word itself, placing the card between the games heading. The card in between has a href function that takes the user directly to the game. Otherwise they can use the navigation bar to go to the game itself.
+The header plays on the word itself, placing the card between the word splitting Inbet and weens with the iconic blue card backing of the bicycle franchise. The user can click on this card taking them directly to the game. Otherwise they can use the navigation bar to go to the probability calculator or the game itself.
+
+<img src="assets/documentation/heading.jpg" alt="Inbetweens Heading"/>
 
 ### Navigation bar
-I kept the navigation bar basic to stick with the retro theme of a casino style card site. 
+I kept the navigation bar basic to stick with the ninties theme of a casino style card site. It was origionally below the heading buit i chose to place the navigation bar at the top of the site like the old style card game sites depicted.
+
+<img src="assets/documentation/navigationbar.jpg" alt="Navigation Bar"/>
 
 ### Main Section
+The main section it devided in to three sections and a footer below. An introduction section, the card ranking with game objective and a section focused on the ante and betting system for the user clarification.
 
+The Introduction 
+<img src="assets/documentation/introduction.jpg" alt="Introduction"/>
+
+The Rank & Objective
+
+<img src="assets/documentation/rankobjective.jpg" alt="Rank & Objective"/>
+
+The Ante & Bet
+
+<img src="assets/documentation/antebet.jpg" alt="Ante & Bet"/>
 
 ### Calculator Page
 This page is dedicated toward learning about the probability of a win or loss.
 
+<img src="assets/documentation/probabilitycalculator.jpg" alt="Probability Calculator"/>
 
 
 ### Game Page
+
+
+<img src="assets/documentation/inbetweengame.jpg" alt="Inbetweens Game"/>
+
 
 #### The Game
 The dealer lays two random cards face up side by side and in front of the player, so both dealer and player can see the value of each card, a third card is then laid face down in-between these cards and play begins.
@@ -138,6 +163,7 @@ If the hit card is not between the dealers cards then the player loses the bet. 
 The footer contains the copyright logo, with a sentance "A Probability game : Inbetweens by Mark Young 2023"
 Also contained in the footer are href access to my linkedIn and Github account.
 
+<img src="assets/documentation/footer.jpg" alt="Footer"/>
 
 ## Technologies Used
 
