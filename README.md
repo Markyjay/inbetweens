@@ -174,6 +174,7 @@ Also contained in the footer are href access to my linkedIn and Github account.
 <img src="assets/documentation/languagesused.jpg" alt="Languages Used"/>
 
 ## Testing
+Please see [TESTING.md](TESTING.md) for all testing performed
 
 ### Validator testing
 Validator.nu/LV http://validator.w3.org/services
