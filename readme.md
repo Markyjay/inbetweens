@@ -171,6 +171,8 @@ Also contained in the footer are href access to my linkedIn and Github account.
 - CSS
 - JavaScript
 
+<img src="assets/documentation/languagesused.jpg" alt="Languages Used"/>
+
 ## Testing
 
 ### Validator testing
