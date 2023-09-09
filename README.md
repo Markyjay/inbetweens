@@ -176,45 +176,13 @@ Also contained in the footer are href access to my linkedIn and Github account.
 ## Testing
 Please see [TESTING.md](TESTING.md) for all testing performed
 
-### Validator testing
-Validator.nu/LV http://validator.w3.org/services
--HTML5
-  - No errors were found using W3C HTML validator testing. 
- 
-<img src="assets/documentation/indexhtmlvalidation.jpg" alt="IndexHTML Validating"/>
-<img src="assets/documentation/calculatorhtmlvalidation.jpg" alt="CalculatorHTML Validating"/>
-<img src="assets/documentation/inbetweenshtmlvalidation.jpg" alt="InbetweenHTML Validating"/>
-
-  - trailing slash on void elements occured on one html file but no effects
-  <img src="assets/documentation/trailingslashelements.jpg" alt="IndexHTML Validating"/>
-
--	CSS3
-  - No errors were found using W3C HTML validator testing.
-
-<img src="assets/documentation/cssvalidation.jpg" alt="CSS Validating"/>
-
-- JavaScript
- - No errors were found using JSHint validator testing
-
- <img src="assets/documentation/scriptjshintvalidation.jpg" alt="Scriptjs Validating"/>
- <img src="assets/documentation/calculatorjshintvalidation.jpg" alt="Calculatorjs Validating"/>
-
-### Lighthouse testing
-
-As I progress through the course i hope to learn more about HTML and CSS code to imrove the results of my lighthouse testing.
-
-<img src="assets/documentation/lighthousetesting.jpg" alt="Lighthouse testing"/>
-
-
 ## Bugs & Errors
 1. 
 
 ## Issues
 
-1. Array issues - I followed instructions to design 2 arrays. One containing the four suits and another containing the numbers 1 - 13. Than designing a function called getRandomCard () that returned a random siut with a random value. I later recognised three major issues
-    * The getRandomCard function was returning a set value that was not recognisable as a number to a check result function so I created a method to define the cards chosen by the getRandomCard function to be a substring and removing the last part of the string which would be the suits symbols. This provided clear values that could be properly used to calculate the result of inbvetween cards.
-    * The rule that a black ace and a red ace had different values caused serious issues and headaches and initially i considered removing the rule but i persevered and designed a solution i believe to be quite clever. I added a 14th value to the array and defined the red cards to be designated by 2 to 14 allowing the red aces to have a substring value of 14 and alternatively the black cards were designated the values of 1 to 13 so that a black ace had the substring value of 1. Now when the check result calculation was done the cards all had the same values despite their suit but black and red aces had a low and high value respectivley. This created a secondary issue whereby there was extra values in the group that the getRandomCard could choose from. (four extra cards that needed to be removed to provide a full deck of 52 cards and not 56)
-    * This secondary issue i solved by using a filter that removed the four unwanted values (the two high value black aces (14 of clubs & 14 of spades) and the two low value red aces (1 of hearts & 1 of diamonds)) 
+1. 
+    
 
 2. Deal () function issues -  I discovered three issues with the function
     * For a long time i did not recognise that getRandomCard was chosing from the same set of cards, in reality this would not happen as card 2 cannot be the same as card1 also card 3 would never be the same as card1 or card2. When I called getRandomCard([card1, card2]), i am asking the getRandomCard function to generate a new random card, but it should make sure that the card it generates is different from card1 and card2. In other words, i don't want to get a duplicate of card1 or card2.

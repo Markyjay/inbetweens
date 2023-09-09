@@ -9,7 +9,7 @@ body {
 /* Home page Images */
 #game_img {
   height: 8vw;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 #game_img:hover {
@@ -20,13 +20,13 @@ body {
   height: 8vw;
   margin-bottom: 15px;
   margin-left: 12px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .rank_img {
   justify-content: space-around;
   height: 7vw;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-left: 3px;
 }
 
@@ -96,7 +96,7 @@ body div p {
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3vw;
-}
+  }
 /* Footer */
 
 .footer {
@@ -106,6 +106,8 @@ body div p {
   height: 100px;
   text-align: center;
   padding: 3px;
+  padding-bottom: 0;
+  margin-bottom: 0;
   background-color: #02833c;
   color: yellow;
 }
@@ -291,6 +293,7 @@ height: 6vw;
 width: 18vw;
 color: black;
 font-weight: bolder;
+font-size: 150%;
 
 }
 
@@ -358,7 +361,13 @@ p {
 @media only screen and (max-width: 1200px) {
   /* Main Page */
 
+
 /* Calculator */
+  #calculate {
+    
+    font-size: 100%;
+    
+    }
 
 /* Inbetweens */
 }
@@ -394,8 +403,25 @@ p {
   }
 
 /* Calculator */
+#calculate {
+    
+  font-size: 70%;
+  
+  }
 
-/* Inbetweens */
+  /* Inbetweens */
+.dealer-card {
+
+  border: 3px solid #696969;
+  border-radius: 5px;
+
+}
+
+.player-card {
+  border: 3px solid #696969;
+  border-radius: 5px;
+ 
+}
 }
 
 
@@ -415,6 +441,14 @@ ol li {
 }
 
 /* Calculator */
+#calculate {
+  height: 30px;
+  width: 120px;
+  color: black;
+  font-weight: bolder;
+  font-size: 60%;
+  margin-top: 5vw;
+  }
 
 /* Inbetweens */
 }
@@ -437,7 +471,51 @@ ol li {
 }
 
 /* Calculator */
+#calculate {
+height: 30px;
+width: 120px;
+color: black;
+font-weight: bolder;
+font-size: 60%;
+margin-top: 5vw;
+}
 
 /* Inbetweens */
+.dealer-card {
+
+  border: 2px solid #696969;
+  border-radius: 5px;
+
+}
+
+.player-card {
+  border: 2px solid #696969;
+  border-radius: 5px;
+ 
+}
+
+
+#deal,
+#hit,
+#pass {
+  margin-top: 20px;
+  padding: 6px 15px;
+  font-size: 15px;
+}
+
+#betUp {
+  padding: 7px 12px;
+  font-size: 10px;
+}
+
+#betDown {
+  padding: 7px 12px;
+  font-size: 10px;
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 10px;
+ }
 }
 
