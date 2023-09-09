@@ -80,7 +80,7 @@ I chose "Franklin Gothic Medium" for the heading of inbetweens and "Arial Narrow
 
 The pictures of cards were downloaded from https://bicyclecards.com/. I took the clearest images of each card I could find and used windows Print 3d to crop the images to size. I name each image by its number value and the first letter of its suit. I also did the same the iconic back cover of a bicycle playing card. Having a choice of red or blue I went with blue.
 
-<img src="assets/images/back.jpg" alt="blue card backing"/>
+<p align="center"><img src="assets/images/back.jpg" alt="blue card backing" height= 300;/></p>
 
 ## Features
 
@@ -104,14 +104,14 @@ I kept the navigation bar basic to stick with the nineties theme of a casino sty
 ### Main Section
 The main section it divided in to three sections and a footer below. An introduction section, the card ranking with game objective and a section focused on the ante and betting system for the user clarification.
 
-The Introduction 
+#### The Introduction 
 <img src="assets/documentation/introduction.jpg" alt="Introduction"/>
 
-The Rank & Objective
+#### The Rank & Objective
 
 <img src="assets/documentation/rankobjective.jpg" alt="Rank & Objective"/>
 
-The Ante & Bet
+#### The Ante & Bet
 
 <img src="assets/documentation/antebet.jpg" alt="Ante & Bet"/>
 
@@ -227,7 +227,6 @@ To fix errors in my code I utilised sites such as
 https://stackoverflow.com/
 https://www.youtube.com/
 https://www.w3schools.com/
-slack
 
 ## Acknowledgements
 For inspiration in general, for code, design help and advice, I'd like to give thanks to; 
@@ -239,4 +238,4 @@ For inspiration in general, for code, design help and advice, I'd like to give t
 
 - Patricia Young my mother who has been encouraging and patient with me throughout the project.
 
-- Slack members and the code institute tutoring service were also helpful throughout the project.
+- Slack members and the code institute tutoring service were also helpful and thourough with their attention.
