@@ -156,12 +156,12 @@ body div p {
 
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   left: 30vw;
-  top: 50%;
+  top: 40%;
   width: 40%;
-  height: 12.5%;
+  height: 6%;
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   border-radius: 10px;

@@ -90,7 +90,7 @@ let card1, card2; // Initialize card variables here
 
 function drawCards() {
   card1 = getRandomCard();
-  card2 = getRandomCard();
+  card2 = getRandomCard([card1]);
 
   // Update card images here
   document.getElementById("card1").style.backgroundImage = `url(assets/images/${cardImages[card1]})`;
@@ -115,6 +115,7 @@ function calculateProbability() {
  
  return (count / 13); // Probability as a fraction
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const calculateButton = document.getElementById("calculate");
