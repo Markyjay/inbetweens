@@ -459,7 +459,7 @@ ol li {
 
   /* Main Page */
 h1 {
-  font-size: 300%;
+  font-size: 280%;
 }
 
 p {
@@ -468,6 +468,12 @@ p {
 
 ol li {
   font-size: 10px;
+}
+
+.rank_img {
+  height: 5vw;
+  border-radius: 2px;
+  margin-left: 3px;
 }
 
 /* Calculator */
@@ -482,16 +488,17 @@ margin-top: 5vw;
 
 /* Inbetweens */
 .dealer-card {
-
+  width: 18vw;
+  height: 25vw;
   border: 2px solid #696969;
   border-radius: 5px;
-
 }
 
 .player-card {
+  width: 18vw;
+  height: 25vw;
   border: 2px solid #696969;
   border-radius: 5px;
- 
 }
 
 
