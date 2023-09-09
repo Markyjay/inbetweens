@@ -4,6 +4,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(2, 90, 9);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* Home page Images */
@@ -69,7 +74,7 @@ li a:hover {
 }
 
 ol li {
-  width:100%;
+  width: 100%;
   text-align: left;
   color: black;
   margin: 0 5px;
@@ -96,7 +101,7 @@ body div p {
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-top: 3vw;
-  }
+}
 /* Footer */
 
 .footer {
@@ -107,29 +112,28 @@ body div p {
   text-align: center;
   padding: 3px;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-top: auto;
   background-color: #02833c;
   color: yellow;
 }
 
 .footer a {
-    font-size: 20px;
-    color: inherit;
-    border: 1px solid #d4f807;
-    width: 35px;
-    height: 35px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-  }
-  
-  .footer a:hover {
-    opacity: 1;
-  }
+  font-size: 20px;
+  color: inherit;
+  border: 1px solid #d4f807;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
 
+.footer a:hover {
+  opacity: 1;
+}
 
 /* Calculator page */
 
@@ -146,18 +150,17 @@ body div p {
 
 .how-to-win h2 {
   font-size: 200%;
-
 }
 
 .how-to-win h3 {
   font-size: 120%;
   color: orangered;
-  }
+}
 
 .how-to-win p {
   text-align: left;
   font-size: 100%;
-  }
+}
 
 .card {
   width: 100px;
@@ -224,7 +227,6 @@ body div p {
   border-radius: 6px;
 }
 
-
 /* Game Container */
 .container {
   width: 80%;
@@ -289,12 +291,11 @@ button {
 }
 
 #calculate {
-height: 6vw;
-width: 18vw;
-color: black;
-font-weight: bolder;
-font-size: 150%;
-
+  height: 6vw;
+  width: 18vw;
+  color: black;
+  font-weight: bolder;
+  font-size: 150%;
 }
 
 p {
@@ -349,7 +350,8 @@ p {
 
 /* Media quieres */
 
-@media only screen and (min-width: 1200px) { }
+@media only screen and (min-width: 1200px) {
+}
 
 /* Main Page */
 
@@ -357,42 +359,34 @@ p {
 
 /* Inbetweens */
 
-
 @media only screen and (max-width: 1200px) {
   /* Main Page */
 
-
-/* Calculator */
+  /* Calculator */
   #calculate {
-    
     font-size: 100%;
-    
-    }
+  }
 
-/* Inbetweens */
+  /* Inbetweens */
 }
 
-
-
-@media only screen and (max-width: 1024px) { 
+@media only screen and (max-width: 1024px) {
   /* Main Page */
   h1 {
     font-size: 500%;
   }
 
-/* Calculator */
+  /* Calculator */
 
-/* Inbetweens */
+  /* Inbetweens */
 }
 
-
-
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
   /* Main Page */
   h1 {
     font-size: 400%;
   }
-  
+
   p {
     font-size: 12px;
   }
@@ -402,127 +396,116 @@ p {
     font-size: 10px;
   }
 
-/* Calculator */
-#calculate {
-    
-  font-size: 70%;
-  
+  /* Calculator */
+  #calculate {
+    font-size: 70%;
   }
 
   /* Inbetweens */
-.dealer-card {
+  .dealer-card {
+    border: 3px solid #696969;
+    border-radius: 5px;
+  }
 
-  border: 3px solid #696969;
-  border-radius: 5px;
-
+  .player-card {
+    border: 3px solid #696969;
+    border-radius: 5px;
+  }
 }
-
-.player-card {
-  border: 3px solid #696969;
-  border-radius: 5px;
- 
-}
-}
-
 
 @media only screen and (max-width: 480px) {
   /* Main Page */
-h1 {
-  font-size: 200%;
-}
-
-p{
-  font-size: 12px;
-}
-
-ol li {
-  margin-left: -3px;
-  font-size: 10px;
-}
-
-/* Calculator */
-#calculate {
-  height: 30px;
-  width: 120px;
-  color: black;
-  font-weight: bolder;
-  font-size: 60%;
-  margin-top: 5vw;
+  h1 {
+    font-size: 200%;
   }
 
-/* Inbetweens */
+  p {
+    font-size: 12px;
+  }
+
+  ol li {
+    margin-left: -3px;
+    font-size: 10px;
+  }
+
+  /* Calculator */
+  #calculate {
+    height: 30px;
+    width: 120px;
+    color: black;
+    font-weight: bolder;
+    font-size: 60%;
+    margin-top: 5vw;
+  }
+
+  /* Inbetweens */
 }
 
-
-
-@media only screen and (max-width: 480px) { 
-
+@media only screen and (max-width: 480px) {
   /* Main Page */
-h1 {
-  font-size: 280%;
+  h1 {
+    font-size: 280%;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  ol li {
+    font-size: 10px;
+  }
+
+  .rank_img {
+    height: 5vw;
+    border-radius: 2px;
+    margin-left: 3px;
+  }
+
+  /* Calculator */
+  #calculate {
+    height: 30px;
+    width: 120px;
+    color: black;
+    font-weight: bolder;
+    font-size: 60%;
+    margin-top: 5vw;
+  }
+
+  /* Inbetweens */
+  .dealer-card {
+    width: 18vw;
+    height: 25vw;
+    border: 2px solid #696969;
+    border-radius: 5px;
+  }
+
+  .player-card {
+    width: 18vw;
+    height: 25vw;
+    border: 2px solid #696969;
+    border-radius: 5px;
+  }
+
+  #deal,
+  #hit,
+  #pass {
+    margin-top: 20px;
+    padding: 6px 15px;
+    font-size: 15px;
+  }
+
+  #betUp {
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+
+  #betDown {
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+
+  #reset {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
 }
-
-p {
-  font-size: 12px;
-}
-
-ol li {
-  font-size: 10px;
-}
-
-.rank_img {
-  height: 5vw;
-  border-radius: 2px;
-  margin-left: 3px;
-}
-
-/* Calculator */
-#calculate {
-height: 30px;
-width: 120px;
-color: black;
-font-weight: bolder;
-font-size: 60%;
-margin-top: 5vw;
-}
-
-/* Inbetweens */
-.dealer-card {
-  width: 18vw;
-  height: 25vw;
-  border: 2px solid #696969;
-  border-radius: 5px;
-}
-
-.player-card {
-  width: 18vw;
-  height: 25vw;
-  border: 2px solid #696969;
-  border-radius: 5px;
-}
-
-
-#deal,
-#hit,
-#pass {
-  margin-top: 20px;
-  padding: 6px 15px;
-  font-size: 15px;
-}
-
-#betUp {
-  padding: 7px 12px;
-  font-size: 10px;
-}
-
-#betDown {
-  padding: 7px 12px;
-  font-size: 10px;
-}
-
-#reset {
-  padding: 10px 20px;
-  font-size: 10px;
- }
-}
-

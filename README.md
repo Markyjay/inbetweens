@@ -234,17 +234,9 @@ For inspiration in general, for code, design help and advice, I'd like to give t
 
 - Jubril my mentor at Code Institute who was very patient and generous with his time.
 
-- Kyle Clow, Stephen Dawson and Jody Murray fellow students I met during hackathons. They helped me kindly and patiently with advice and encouragement.
+- Kyle Clow, Sasan Tazayoni, Stephen Dawson and Jody Murray fellow students I met during hackathons. 
+  They helped me kindly and patiently with advice and encouragement.
 
 - Patricia Young my mother who has been encouraging and patient with me throughout the project.
 
 - Slack members and the code institute tutoring service were also helpful throughout the project.
-
-
-
-
-
-
-
-
-
