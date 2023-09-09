@@ -61,15 +61,13 @@ The game is simple, fast and designed to be engaging. The game involes gambling 
 
 
 ### User Goals
-The goal is to create a website that uses a basic card game to teach chance and probability to students and for any user to have fun trying to reach the winning objective of 1000 credits.
+The goal is to create a website that is Informational, enjoyable and challenging. The website takes a commonly known card game to teach chance and probability to students and for any user to have fun while challenging themselves to reach the winning objective of 1000 credits.
 
 
 ### Design
+The concept started as a practice project so that i could learn javaScript and in the process i came to realise that although it was a basic game it's rules provided many intricate details that really challenge my understanding of code. It begain with the game only, three cards and buttons to initiate the deal, the bet and a reset. After about two weeks of painstaking learning i realised that i had spent so much time trying to work out the intricacies that i would finish it a submit it for my second project for the Code Institute.
 
-
-
-
-
+At this point i designed the rest of the site on figma.com and decided to make it a learning site for probability, as i am a maths teacher I felt it appropriate.
 
 Figma Design <img src="assets/documentation/figmadesign.jpg" alt="figma-design"/>
 
@@ -147,42 +145,60 @@ Also contained in the footer are href access to my linkedIn and Github account.
 - CSS
 - JavaScript
 
-
-
 ## Testing
 
-# Validator testing
+### Validator testing
 Validator.nu/LV http://validator.w3.org/services
 -HTML5
   - No errors were found using W3C HTML validator testing. 
  
-<img src="/documentation/htmlvalidating.jpg" alt="HTML Validating"/>
+<img src="assets/documentation/htmlvalidating.jpg" alt="HTML Validating"/>
 
 -	CSS3
   - No errors were found using W3C HTML validator testing.
 
-<img src="/documentation/cssvalidation.jpg" alt="CSS Validating"/>
+<img src="assets/documentation/cssvalidation.jpg" alt="CSS Validating"/>
 
-## Lighthouse testing
+- JavaScript
+ - No errors were found using JSHint validator testing
+
+ <img src="assets/documentation/jshintvalidation.jpg" alt="JS Validating"/>
+
+### Lighthouse testing
 
 As I progress through the course i hope to learn more about HTML and CSS code to imrove the results of my lighthouse testing.
 
-<img src="/documentation/lighthousetesting.jpg" alt="Lighthouse testing"/>
+<img src="assets/documentation/lighthousetesting.jpg" alt="Lighthouse testing"/>
 
-### Bugs & Errors
+## Bugs & Errors
 
-1. 
+1.
+2.  
 
 
-* Development
+
+## Deployment
+
+The development platform used for this project was GitPod. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod environment was created using a template provided by Code Institute.
+The live version of the project is deployed at GitHub pages.
+The procedure for deployment followed the "Creating your site" steps provided in GitHub Docs.
+* Log into Github. 
+* Select the correct GitHub Repository to be deployed live.
+* Underneath the repository name, click the "Settings" option.
+* In the sub-section list on the left, under "Pages".
+* Within the "Source" section choose "main" as Branch and "root" as folder and click "Save".
+* The page refreshes and a website shall then deploy via a link.
+
+The live deployed link can be found here : https://markyjay.github.io/inbetweens/
+
+## Media Sources
 
 * Site Design
 The site application Figma was used to portray an overall image of the project beforehand.
 https://www.figma.com/
 
 * Color Pallete
-To choose the correct color pallete this site was utilised.
-https://coolors.co/
+Basic green for the background with various shades, yellow, red and black for the writing.
 
 * Font styling
 The following site was used to generate a good combination of font that worked well with the theme of the site.
@@ -210,13 +226,16 @@ https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY
 
 * Learning JavaScript
 To learn the various methods of JavaScript these sites were utilized.
-https://www.w3schools.com/css/css_grid.asp
+https://www.w3schools.com/js/default.asp
+https://pythontutor.com/
+https://exercism.org/
 
 * Error research
 To fix errors in my code i utilised sites such as
 https://stackoverflow.com/
 https://www.youtube.com/
 https://www.w3schools.com/
+slack
 
 
 ## Acknowledgements
@@ -224,7 +243,7 @@ For inpiration in general, for code, design help and advice, I'd like to give th
 
 - Jubril my mentor at Code Institute who was very patient and generous with his time.
 
-- Kyle Clow, Stephen Dawson and Jody Murray fellow students I met during hackathons i have taken part in. They helped me kindly and patiently with advice and encouragement.
+- Kyle Clow, Stephen Dawson and Jody Murray fellow students I met during hackathons. They helped me kindly and patiently with advice and encouragement.
 
 - Patricia Young my mother who has been encouraging and patient with me throughout the project.
 

@@ -267,10 +267,10 @@ function checkResult() {
     (value3 < value1 && value3 > value2)
   ) {
     credits += bet; // Credits added for a win
-    console.log("credits", credits)
+    console.log("credits", credits);
   } else {
     credits -= bet; // Credits subtracted for a loss
-    console.log("credits", credits)
+    console.log("credits", credits);
   }
   
   // Update the displayed credits with the new value
@@ -284,13 +284,13 @@ function checkResult() {
     reset();
   }
 }
-  console.log('checkResult', checkResult)
-  console.log('card1', card1)
-  console.log('card2', card2)
-  console.log('card3', card3)
-  console.log('value1', value1)
-  console.log('value2', value2)
-  console.log('value3', value3)
+  console.log('checkResult', checkResult);
+  console.log('card1', card1);
+  console.log('card2', card2);
+  console.log('card3', card3);
+  console.log('value1', value1);
+  console.log('value2', value2);
+  console.log('value3', value3);
 
 function reset() {
   credits = 100;
