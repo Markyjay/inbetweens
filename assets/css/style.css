@@ -88,6 +88,12 @@ body div p {
   text-align: center;
 }
 
+.active {
+  background-color: #02993c;
+  border-radius: 100px;
+  border-style: groove;
+}
+
 /* Main */
 .main-container {
   display: flex;
@@ -153,8 +159,9 @@ body div p {
 }
 
 .how-to-win h3 {
-  font-size: 120%;
-  color: orangered;
+  font-size: 150%;
+  color: rgb(255, 0, 0);
+  text-decoration-style: solid;
 }
 
 .how-to-win p {
@@ -236,7 +243,7 @@ body div p {
   border-radius: 10px;
   border-style: inset;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: 5vw;
+  margin-top: 2vw;
 }
 
 h1 {
@@ -351,13 +358,52 @@ p {
 /* Media quieres */
 
 @media only screen and (min-width: 1200px) {
+
+  /* Main Page */
+
+  /* Calculator */
+
+  /* Inbetweens */
+
+  .dealer-card {
+    width: 11.5vw;
+    height: 16.2vw;
+    border: 3px solid #696969;
+    border-radius: 5px;
+  }
+
+  .player-card {
+    width: 11.5vw;
+    height: 16.2vw;
+    border: 3px solid #696969;
+    border-radius: 5px;
+  }
+
+  #deal,
+  #hit,
+  #pass {
+    margin-top: 50px;
+    padding: 6px 15px;
+    font-size: 25px;
+  }
+
+  #betUp {
+    padding: 7px 12px;
+    font-size: 20px;
+  }
+
+  #betDown {
+    padding: 7px 12px;
+    font-size: 20px;
+  }
+
+  #reset {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
 }
 
-/* Main Page */
 
-/* Calculator */
-
-/* Inbetweens */
 
 @media only screen and (max-width: 1200px) {
   /* Main Page */
